@@ -58,3 +58,76 @@
   box-shadow: 0 30px 70px rgba(212,175,55,.25);
 }
 </style>
+<section class="hero">
+  <div class="hero-content">
+    <h1>صنایع شیشه دوجداره آقایی</h1>
+    <p>طراحی، تولید و اجرای شیشه‌های دوجداره و دکوراتیو با کیفیت حرفه‌ای</p>
+
+    <div class="hero-buttons">
+      <a href="tel:09144406478" class="btn gold">تماس مستقیم</a>
+      <a href="https://instagram.com/glass_aghaei_uromei" class="btn glass-btn">
+        اینستاگرام
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+.hero {
+  min-height: 90vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background:
+  linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.8)),
+  url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c");
+  background-size:cover;
+  background-position:center;
+  color:white;
+}
+
+.hero-content {
+  max-width:700px;
+  padding:30px;
+}
+
+.hero h1 {
+  font-size:48px;
+  color:#d4af37;
+}
+
+.hero p {
+  font-size:20px;
+  color:#eee;
+}
+
+.hero-buttons {
+  margin-top:35px;
+}
+
+.btn {
+  display:inline-block;
+  padding:15px 35px;
+  margin:10px;
+  border-radius:30px;
+  text-decoration:none;
+  transition:.4s;
+}
+
+.gold {
+  background:#d4af37;
+  color:#111;
+}
+
+.glass-btn {
+  background:rgba(255,255,255,.12);
+  backdrop-filter:blur(15px);
+  border:1px solid #d4af37;
+  color:white;
+}
+
+.btn:hover {
+  transform:translateY(-5px);
+}
+</style>
