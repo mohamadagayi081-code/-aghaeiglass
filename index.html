@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>صنایع شیشه دوجداره آقایی</title>
@@ -16,54 +19,44 @@ font-family:tahoma;
 }
 
 body{
-background:#050505;
-color:white;
+background:linear-gradient(180deg,#050505,#111827);
+color:#fff;
 }
 
 .hero{
-    min-height:100vh;
 
-    background-image:
-    linear-gradient(
-        rgba(0,0,0,.5),
-        rgba(0,0,0,.8)
-    ),
-    url("https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=1920");
-
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-}
+min-height:100vh;
 
 background:
 linear-gradient(
-rgba(0,0,0,.6),
-rgba(0,0,0,.9)
+rgba(0,0,0,.55),
+rgba(0,0,0,.85)
 ),
-url("https://images.unsplash.com/photo-1558618666-fcd25c85cd64");
+
+url("https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=1920");
 
 background-size:cover;
 background-position:center;
+background-repeat:no-repeat;
 
 }
-
-
-/* منو */
 
 nav{
 
 display:flex;
 justify-content:space-between;
 align-items:center;
+
 padding:30px 8%;
 
 }
 
 .logo{
 
-font-size:28px;
+font-size:30px;
 font-weight:bold;
 color:#d4af37;
+letter-spacing:3px;
 
 }
 
@@ -75,9 +68,6 @@ margin:10px;
 
 }
 
-
-/* متن اصلی */
-
 .main{
 
 text-align:center;
@@ -87,7 +77,7 @@ padding:120px 20px;
 
 .main h1{
 
-font-size:48px;
+font-size:50px;
 color:#d4af37;
 margin-bottom:25px;
 
@@ -100,18 +90,24 @@ line-height:2;
 
 }
 
-
 .btn{
 
 display:inline-block;
-margin:25px 10px;
-padding:15px 40px;
+padding:16px 35px;
 border-radius:50px;
 text-decoration:none;
+margin:15px;
 font-weight:bold;
+
+transition:0.3s;
 
 }
 
+.btn:hover{
+
+transform:scale(1.08);
+
+}
 
 .call{
 
@@ -120,34 +116,33 @@ color:#111;
 
 }
 
-
 .insta{
 
-background:#123b52;
-color:white;
+background:linear-gradient(
+45deg,
+#405de6,
+#833ab4,
+#e1306c
+);
+
+color:#fff;
 
 }
-
-
-
-/* بخش ها */
 
 section{
 
-padding:70px 8%;
+padding:80px 8%;
 
 }
-
 
 .title{
 
 text-align:center;
+font-size:36px;
 color:#d4af37;
-font-size:35px;
 margin-bottom:40px;
 
 }
-
 
 .boxes{
 
@@ -158,37 +153,46 @@ flex-wrap:wrap;
 
 }
 
-
 .box{
 
-background:#111;
-border:1px solid #d4af37;
-border-radius:25px;
-padding:35px;
 width:260px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(15px);
+
+border-radius:25px;
+
+padding:35px;
+
 text-align:center;
+
+box-shadow:0 20px 60px rgba(0,0,0,.5);
+
+transition:0.5s;
 
 }
 
+.box:hover{
+
+transform:translateY(-15px);
+
+}
 
 .box h2{
 
-color:#d4af37;
 font-size:40px;
+color:#d4af37;
 
 }
-
 
 footer{
 
 background:#000;
-padding:30px;
 text-align:center;
+padding:30px;
 
 }
-
-
-/* موبایل */
 
 @media(max-width:700px){
 
@@ -196,6 +200,12 @@ nav{
 
 flex-direction:column;
 gap:20px;
+
+}
+
+.main{
+
+padding-top:70px;
 
 }
 
@@ -207,7 +217,7 @@ font-size:32px;
 
 .main p{
 
-font-size:17px;
+font-size:18px;
 
 }
 
@@ -217,220 +227,144 @@ font-size:17px;
 
 </head>
 
-
 <body>
 
-
-<div class="hero">
-
+<header class="hero">
 
 <nav>
 
 <div class="logo">
+
 AGHAEI GLASS
+
 </div>
 
 <div>
 
 <a href="#service">خدمات</a>
+
 <a href="#about">درباره ما</a>
+
 <a href="#contact">تماس</a>
 
 </div>
 
 </nav>
 
-
-
 <div class="main">
 
 <h1>
+
 صنایع شیشه دوجداره آقایی
+
 </h1>
 
-
 <p>
-تولید و اجرای شیشه دوجداره،
-شیشه دکوراتیو، آینه سندبلاست
+
+تولید و اجرای شیشه دوجداره، آینه سندبلاست و شیشه دکوراتیو
+
 </p>
 
-
 <a class="btn call" href="tel:09144406478">
-تماس و استعلام قیمت
-</a>
 
+استعلام قیمت
+
+</a>
 
 <a class="btn insta" href="https://instagram.com/glass_aghaei_uromei">
+
 اینستاگرام
+
 </a>
 
-
 </div>
 
-</div>
-
-
+</header>
 
 <section id="service">
 
 <h2 class="title">
-خدمات ما
-</h2>
 
+خدمات ما
+
+</h2>
 
 <div class="boxes">
 
 <div class="box">
+
 <h2>01</h2>
+
 <p>شیشه دوجداره</p>
+
 </div>
 
-
 <div class="box">
+
 <h2>02</h2>
+
 <p>شیشه دکوراتیو</p>
+
 </div>
 
-
 <div class="box">
+
 <h2>03</h2>
+
 <p>آینه سندبلاست</p>
+
 </div>
 
 </div>
 
 </section>
-
-
 
 <section id="about">
 
 <h2 class="title">
-اعتماد مشتریان
-</h2>
 
+اعتماد مشتریان
+
+</h2>
 
 <div class="boxes">
 
 <div class="box">
+
 <h2>15+</h2>
+
 <p>سال تجربه</p>
+
 </div>
 
-
 <div class="box">
+
 <h2>1000+</h2>
-<p>پروژه موفق</p>
-</div>
 
+<p>پروژه موفق</p>
+
+</div>
 
 <div class="box">
-<h2>24/7</h2>
-<p>پشتیبانی</p>
-</div>
 
+<h2>24/7</h2>
+
+<p>پشتیبانی</p>
+
+</div>
 
 </div>
 
 </section>
 
-
-
 <footer id="contact">
 
-<p>
-📞 09144406478
-</p>
+<p>📞 09144406478</p>
 
-<p>
-صنایع شیشه دوجداره آقایی
-</p>
+<p>صنایع شیشه دوجداره آقایی</p>
 
 </footer>
 
-
 </body>
+
 </html>
-body{
-    background: linear-gradient(180deg,#050505,#111827);
-    color: white;
-    font-family: Tahoma, sans-serif;
-}
-
-.hero{
-    min-height: 100vh;
-    background:
-    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.85)),
-    url("https://images.unsplash.com/photo-1511818966892-d7d671e672a2");
-    background-size: cover;
-    background-position: center;
-}
-
-.logo{
-    color: #d4af37;
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 3px;
-}
-
-.box{
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 25px;
-    box-shadow: 0 20px 50px rgba(0,0,0,.5);
-    transition: 0.4s;
-}
-
-.box:hover{
-    transform: translateY(-10px);
-}
-
-.btn{
-    padding: 16px 35px;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: .3s;
-}
-
-.btn:hover{
-    transform: scale(1.08);
-}
-
-.call{
-    background: #d4af37;
-    color: #111;
-}
-
-.insta{
-    background: linear-gradient(45deg,#405de6,#833ab4,#e1306c);
-    color: white;
-}
-.boxes{
-    perspective: 1000px;
-}
-
-.box{
-    transform-style: preserve-3d;
-    transition: transform 0.6s ease, box-shadow 0.6s ease;
-    background: rgba(255,255,255,0.08);
-    backdrop-filter: blur(20px);
-    border-radius: 25px;
-    box-shadow: 0 20px 60px rgba(0,0,0,.5);
-}
-
-.box:hover{
-    transform: rotateY(15deg) rotateX(10deg) translateY(-15px);
-}
-
-.hero h1{
-    text-shadow: 0 0 20px rgba(212,175,55,.8);
-}
-
-.btn{
-    box-shadow: 0 10px 30px rgba(212,175,55,.4);
-}
-
-.hero{
-    perspective: 1200px;
-}
