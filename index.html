@@ -395,3 +395,31 @@ body{
     background: linear-gradient(45deg,#405de6,#833ab4,#e1306c);
     color: white;
 }
+.boxes{
+    perspective: 1000px;
+}
+
+.box{
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    border-radius: 25px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.5);
+}
+
+.box:hover{
+    transform: rotateY(15deg) rotateX(10deg) translateY(-15px);
+}
+
+.hero h1{
+    text-shadow: 0 0 20px rgba(212,175,55,.8);
+}
+
+.btn{
+    box-shadow: 0 10px 30px rgba(212,175,55,.4);
+}
+
+.hero{
+    perspective: 1200px;
+}
