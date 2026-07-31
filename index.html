@@ -11,63 +11,97 @@
 
 <style>
 
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:tahoma;
-background:#0d1117;
+}
+
+body{
+background:#0b0f17;
 color:white;
 }
 
 header{
-background:linear-gradient(135deg,#0d1117,#123047);
-padding:80px 20px;
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url("https://images.unsplash.com/photo-1513694203232-719a280e022f");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
+padding:20px;
 }
 
 h1{
-font-size:38px;
+font-size:42px;
 color:#ffffff;
-}
-
-h2{
-color:#4db6ff;
+margin-bottom:20px;
 }
 
 .hero{
-font-size:22px;
-margin-top:20px;
+font-size:24px;
+color:#d9e7ff;
+margin-bottom:15px;
 }
 
 .exp{
-color:#b8c7d1;
+color:#4fc3f7;
+margin-bottom:30px;
 }
 
-.btn{
-display:inline-block;
-padding:15px 30px;
-background:#1f6feb;
-color:white;
+.btns a{
 text-decoration:none;
-border-radius:10px;
-margin-top:25px;
+padding:14px 28px;
+border-radius:12px;
+margin:8px;
+display:inline-block;
+font-size:18px;
 }
 
-.section{
-padding:40px 20px;
+.call{
+background:#d4af37;
+color:black;
+}
+
+.instagram{
+background:#123047;
+color:white;
+}
+
+section{
+padding:60px 20px;
+}
+
+.title{
+text-align:center;
+font-size:30px;
+margin-bottom:30px;
+color:#4fc3f7;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
 .card{
 background:#161b22;
-padding:20px;
-border-radius:15px;
-margin:15px 0;
-border:1px solid #243447;
+padding:25px;
+border-radius:18px;
+text-align:center;
+border:1px solid #1f6feb;
 }
 
 footer{
-background:black;
-padding:25px;
+background:#000;
 text-align:center;
+padding:30px;
 }
 
 </style>
@@ -81,28 +115,32 @@ text-align:center;
 <h1>صنایع شیشه دوجداره آقایی</h1>
 
 <p class="hero">
-
 زیبایی و کیفیت را با صنایع شیشه دوجداره آقایی تجربه کنید
-
 </p>
 
 <p class="exp">
-
 بیش از ۱۵ سال تجربه در تولید و اجرای انواع شیشه و آینه
-
 </p>
 
-<a class="btn" href="tel:09144406478">
+<div class="btns">
 
-تماس با ما
-
+<a class="call" href="tel:09144406478">
+📞 تماس
 </a>
+
+<a class="instagram" href="https://instagram.com/glass_aghaei_uromei" target="_blank">
+📷 اینستاگرام
+</a>
+
+</div>
 
 </header>
 
-<section class="section">
+<section>
 
-<h2>خدمات ما</h2>
+<h2 class="title">خدمات ما</h2>
+
+<div class="cards">
 
 <div class="card">شیشه دوجداره</div>
 
@@ -110,31 +148,11 @@ text-align:center;
 
 <div class="card">آینه سندبلاست</div>
 
-<div class="card">آینه دکوراتیو</div>
+<div class="card">آینه دفرمه</div>
 
 <div class="card">شیشه رومیزی</div>
 
-</section>
-
-<section class="section">
-
-<h2>ارتباط با ما</h2>
-
-<div class="card">
-
-📍 بلوار قاسمی، خیابان خاقانی
-
-<br><br>
-
-📞 ۰۹۱۴۴۴۰۶۴۷۸
-
-<br><br>
-
-<a href="https://instagram.com/glass_aghaei_uromei" target="_blank">
-
-📷 اینستاگرام صنایع شیشه آقایی
-
-</a>
+<div class="card">نصب و اجرا</div>
 
 </div>
 
@@ -142,7 +160,11 @@ text-align:center;
 
 <footer>
 
-© Glass Aghaei
+📍 بلوار قاسمی، خیابان خاقانی
+
+<br><br>
+
+📞 ۰۹۱۴۴۴۰۶۴۷۸
 
 </footer>
 
