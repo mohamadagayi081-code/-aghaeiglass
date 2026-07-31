@@ -7,15 +7,19 @@
 <title>صنایع شیشه دوجداره آقایی</title>
 
 <style>
+*{
+box-sizing:border-box;
+font-family:tahoma, Arial;
+}
+
 body{
 margin:0;
-font-family:tahoma;
 background:#050505;
 color:white;
 }
 
 .hero{
-height:100vh;
+min-height:100vh;
 background:
 linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.85)),
 url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c");
@@ -25,59 +29,76 @@ display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
+padding:20px;
 }
 
-.box{
-padding:30px;
+.container{
+max-width:800px;
 }
 
 h1{
-font-size:45px;
+font-size:42px;
 color:#d4af37;
 }
 
 p{
 font-size:20px;
+line-height:2;
 }
 
-a{
+.btn{
 display:inline-block;
-padding:15px 30px;
 margin:10px;
+padding:15px 35px;
 border-radius:30px;
 text-decoration:none;
+transition:.3s;
 }
 
 .call{
 background:#d4af37;
-color:black;
+color:#000;
 }
 
-.insta{
+.instagram{
 border:1px solid #d4af37;
 color:white;
+background:rgba(255,255,255,.1);
 }
+
+.btn:hover{
+transform:translateY(-5px);
+}
+
 
 .stats{
 display:flex;
 justify-content:center;
 gap:20px;
-padding:50px;
+padding:50px 20px;
 flex-wrap:wrap;
 }
 
 .card{
-background:#111;
-border:1px solid #d4af37;
+width:220px;
 padding:30px;
 border-radius:20px;
 text-align:center;
+background:rgba(255,255,255,.08);
+border:1px solid #d4af37;
 }
 
-h2{
-color:#d4af37;
+.card h2{
 font-size:40px;
+color:#d4af37;
+margin:0;
 }
+
+.about{
+text-align:center;
+padding:40px;
+}
+
 </style>
 
 </head>
@@ -85,23 +106,27 @@ font-size:40px;
 <body>
 
 <section class="hero">
-<div class="box">
 
-<h1>صنایع شیشه دوجداره آقایی</h1>
+<div class="container">
+
+<h1>
+صنایع شیشه دوجداره آقایی
+</h1>
 
 <p>
-تولید و اجرای شیشه دوجداره و دکوراتیو
+تولید و اجرای شیشه دوجداره، دکوراتیو و مدرن
 </p>
 
-<a class="call" href="tel:09144406478">
+<a class="btn call" href="tel:09144406478">
 تماس مستقیم
 </a>
 
-<a class="insta" href="https://instagram.com/glass_aghaei_uromei">
+<a class="btn instagram" href="https://instagram.com/glass_aghaei_uromei">
 اینستاگرام
 </a>
 
 </div>
+
 </section>
 
 
@@ -121,6 +146,19 @@ font-size:40px;
 <h2>24/7</h2>
 <p>پشتیبانی</p>
 </div>
+
+</section>
+
+
+<section class="about">
+
+<h2 style="color:#d4af37">
+کیفیت و اعتماد
+</h2>
+
+<p>
+شیشه دوجداره آقایی، انتخابی برای ساختمان‌های مدرن
+</p>
 
 </section>
 
