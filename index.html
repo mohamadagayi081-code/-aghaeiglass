@@ -1,93 +1,29 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-
 <head>
 
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>صنایع شیشه دوجداره آقایی</title>
-/* Luxury Upgrade */
 
-body{
-background:#030303;
-}
-
-.hero{
-position:relative;
-overflow:hidden;
-}
-
-.hero:before{
-content:"";
-position:absolute;
-width:500px;
-height:500px;
-background:#d4af37;
-filter:blur(180px);
-opacity:.25;
-top:-200px;
-right:-200px;
-}
-
-.main h1{
-font-size:60px;
-letter-spacing:1px;
-text-shadow:
-0 0 20px rgba(212,175,55,.5);
-}
-
-
-.box{
-background:
-linear-gradient(
-145deg,
-rgba(255,255,255,.15),
-rgba(255,255,255,.03)
-);
-
-border:1px solid rgba(212,175,55,.5);
-
-box-shadow:
-0 30px 80px rgba(0,0,0,.8);
-
-}
-
-.box p{
-font-size:18px;
-color:#ddd;
-}
-
-
-.btn{
-box-shadow:
-0 15px 40px rgba(212,175,55,.35);
-}
-
-
-section{
-position:relative;
-}
-
-
-.title{
-font-weight:bold;
-letter-spacing:2px;
-}
 <style>
 
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:tahoma;
+font-family:tahoma,Arial;
 }
 
 body{
-background:linear-gradient(180deg,#050505,#111827);
-color:#fff;
+background:#050505;
+color:white;
+overflow-x:hidden;
 }
+
+
+/* صفحه اول */
 
 .hero{
 
@@ -95,197 +31,340 @@ min-height:100vh;
 
 background:
 linear-gradient(
-rgba(0,0,0,.55),
-rgba(0,0,0,.85)
+rgba(0,0,0,.45),
+rgba(0,0,0,.9)
 ),
-
-url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1920");
+url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600");
 
 background-size:cover;
 background-position:center;
-background-repeat:no-repeat;
+
+position:relative;
 
 }
+
+
+/* نور لوکس */
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+width:450px;
+height:450px;
+
+background:#d4af37;
+
+filter:blur(180px);
+
+opacity:.25;
+
+top:-200px;
+right:-200px;
+
+}
+
+
+
+/* منو */
 
 nav{
 
+position:relative;
+z-index:2;
+
 display:flex;
+
 justify-content:space-between;
+
 align-items:center;
 
-padding:30px 8%;
+padding:35px 8%;
 
 }
+
 
 .logo{
 
-font-size:30px;
+font-size:32px;
+
 font-weight:bold;
+
 color:#d4af37;
-letter-spacing:3px;
+
+letter-spacing:4px;
 
 }
+
+
 
 nav a{
 
 color:white;
+
 text-decoration:none;
+
 margin:10px;
 
 }
 
-.main{
+
+
+/* متن اصلی */
+
+
+.hero-content{
+
+position:relative;
+
+z-index:2;
 
 text-align:center;
+
 padding:120px 20px;
 
 }
 
-.main h1{
 
-font-size:50px;
+
+.hero-content h1{
+
+font-size:55px;
+
 color:#d4af37;
+
+text-shadow:
+0 0 30px rgba(212,175,55,.5);
+
 margin-bottom:25px;
 
 }
 
-.main p{
+
+
+.hero-content p{
 
 font-size:22px;
+
 line-height:2;
 
 }
 
+
+
+/* دکمه ها */
+
+
 .btn{
 
 display:inline-block;
-padding:16px 35px;
+
+padding:17px 40px;
+
+margin:25px 10px;
+
 border-radius:50px;
+
 text-decoration:none;
-margin:15px;
+
 font-weight:bold;
 
-transition:0.3s;
+transition:.4s;
 
 }
+
+
 
 .btn:hover{
 
-transform:scale(1.08);
+transform:translateY(-8px) scale(1.05);
 
 }
+
+
 
 .call{
 
 background:#d4af37;
+
 color:#111;
 
-}
-
-.insta{
-
-background:linear-gradient(
-45deg,
-#405de6,
-#833ab4,
-#e1306c
-);
-
-color:#fff;
+box-shadow:0 15px 40px rgba(212,175,55,.4);
 
 }
+
+
+
+.instagram{
+
+background:#123b52;
+
+color:white;
+
+}
+
+
+
+/* بخش ها */
+
 
 section{
 
-padding:80px 8%;
+padding:90px 8%;
 
 }
+
+
 
 .title{
 
 text-align:center;
-font-size:36px;
+
+font-size:38px;
+
 color:#d4af37;
-margin-bottom:40px;
+
+margin-bottom:50px;
 
 }
 
-.boxes{
+
+
+/* کارت شیشه ای */
+
+
+.cards{
 
 display:flex;
+
 justify-content:center;
-gap:25px;
+
+gap:30px;
+
 flex-wrap:wrap;
+
+perspective:1000px;
 
 }
 
-.box{
 
-width:260px;
 
-background:rgba(255,255,255,.08);
+.card{
 
-backdrop-filter:blur(15px);
+width:270px;
 
-border-radius:25px;
-
-padding:35px;
+padding:40px 25px;
 
 text-align:center;
 
-box-shadow:0 20px 60px rgba(0,0,0,.5);
 
-transition:0.5s;
+background:
+linear-gradient(
+145deg,
+rgba(255,255,255,.15),
+rgba(255,255,255,.03)
+);
+
+
+border:1px solid rgba(212,175,55,.5);
+
+border-radius:30px;
+
+
+backdrop-filter:blur(20px);
+
+
+box-shadow:
+
+0 30px 80px rgba(0,0,0,.8);
+
+
+transition:.5s;
+
 
 }
 
-.box:hover{
 
-transform:translateY(-15px);
+
+.card:hover{
+
+transform:
+
+rotateY(15deg)
+translateY(-15px);
+
 
 }
 
-.box h2{
 
-font-size:40px;
+
+.card h2{
+
+font-size:45px;
+
 color:#d4af37;
 
 }
+
+
+
+.card p{
+
+font-size:18px;
+
+color:#ddd;
+
+}
+
+
+
+/* فوتر */
+
 
 footer{
 
 background:#000;
+
 text-align:center;
-padding:30px;
+
+padding:35px;
+
+font-size:18px;
 
 }
 
+
+
+/* موبایل */
+
+
 @media(max-width:700px){
+
 
 nav{
 
 flex-direction:column;
+
 gap:20px;
 
 }
 
-.main{
 
-padding-top:70px;
-
-}
-
-.main h1{
+.hero-content h1{
 
 font-size:32px;
 
 }
 
-.main p{
 
-font-size:18px;
+.hero-content p{
+
+font-size:17px;
 
 }
+
 
 }
 
@@ -293,11 +372,15 @@ font-size:18px;
 
 </head>
 
+
 <body>
+
 
 <header class="hero">
 
+
 <nav>
+
 
 <div class="logo">
 
@@ -305,9 +388,10 @@ AGHAEI GLASS
 
 </div>
 
+
 <div>
 
-<a href="#service">خدمات</a>
+<a href="#services">خدمات</a>
 
 <a href="#about">درباره ما</a>
 
@@ -315,9 +399,13 @@ AGHAEI GLASS
 
 </div>
 
+
 </nav>
 
-<div class="main">
+
+
+<div class="hero-content">
+
 
 <h1>
 
@@ -325,11 +413,14 @@ AGHAEI GLASS
 
 </h1>
 
+
 <p>
 
-تولید و اجرای شیشه دوجداره، آینه سندبلاست و شیشه دکوراتیو
+تولید کننده شیشه دوجداره،  
+آینه سندبلاست و شیشه دکوراتیو
 
 </p>
+
 
 <a class="btn call" href="tel:09144406478">
 
@@ -337,17 +428,24 @@ AGHAEI GLASS
 
 </a>
 
-<a class="btn insta" href="https://instagram.com/glass_aghaei_uromei">
+
+<a class="btn instagram" href="https://instagram.com/glass_aghaei_uromei">
 
 اینستاگرام
 
 </a>
 
+
 </div>
+
 
 </header>
 
-<section id="service">
+
+
+
+<section id="services">
+
 
 <h2 class="title">
 
@@ -355,9 +453,11 @@ AGHAEI GLASS
 
 </h2>
 
-<div class="boxes">
 
-<div class="box">
+<div class="cards">
+
+
+<div class="card">
 
 <h2>01</h2>
 
@@ -365,7 +465,8 @@ AGHAEI GLASS
 
 </div>
 
-<div class="box">
+
+<div class="card">
 
 <h2>02</h2>
 
@@ -373,7 +474,8 @@ AGHAEI GLASS
 
 </div>
 
-<div class="box">
+
+<div class="card">
 
 <h2>03</h2>
 
@@ -381,11 +483,17 @@ AGHAEI GLASS
 
 </div>
 
+
 </div>
+
 
 </section>
 
+
+
+
 <section id="about">
+
 
 <h2 class="title">
 
@@ -393,9 +501,11 @@ AGHAEI GLASS
 
 </h2>
 
-<div class="boxes">
 
-<div class="box">
+<div class="cards">
+
+
+<div class="card">
 
 <h2>15+</h2>
 
@@ -403,7 +513,8 @@ AGHAEI GLASS
 
 </div>
 
-<div class="box">
+
+<div class="card">
 
 <h2>1000+</h2>
 
@@ -411,7 +522,8 @@ AGHAEI GLASS
 
 </div>
 
-<div class="box">
+
+<div class="card">
 
 <h2>24/7</h2>
 
@@ -419,9 +531,14 @@ AGHAEI GLASS
 
 </div>
 
+
 </div>
 
+
 </section>
+
+
+
 
 <footer id="contact">
 
@@ -429,7 +546,9 @@ AGHAEI GLASS
 
 <p>صنایع شیشه دوجداره آقایی</p>
 
+
 </footer>
+
 
 </body>
 
