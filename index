@@ -1,18 +1,60 @@
 <section class="stats">
 
-  <div class="stat-box">
+  <div class="stat-box glass">
     <h2>15+</h2>
     <p>سال تجربه</p>
   </div>
 
-  <div class="stat-box">
+  <div class="stat-box glass">
     <h2>1000+</h2>
     <p>پروژه موفق</p>
   </div>
 
-  <div class="stat-box">
+  <div class="stat-box glass">
     <h2>24/7</h2>
     <p>پشتیبانی</p>
   </div>
 
 </section>
+
+<style>
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  width: 220px;
+  padding: 35px 20px;
+  text-align: center;
+  border-radius: 25px;
+  color: white;
+  transition: .5s;
+}
+
+.glass {
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(212,175,55,.35);
+  box-shadow: 0 20px 50px rgba(0,0,0,.4);
+}
+
+.stat-box h2 {
+  font-size: 45px;
+  color: #d4af37;
+  margin: 0;
+}
+
+.stat-box p {
+  font-size: 18px;
+  color: #ddd;
+}
+
+.stat-box:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 30px 70px rgba(212,175,55,.25);
+}
+</style>
