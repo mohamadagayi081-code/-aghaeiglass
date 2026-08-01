@@ -8,27 +8,24 @@
 
 <title>صنایع شیشه دوجداره آقایی | شیشه دوجداره ارومیه</title>
 
-<meta name="description" content="صنایع شیشه دوجداره آقایی در ارومیه، تولید و اجرای شیشه دوجداره، شیشه دکوراتیو، آینه سندبلاست و خدمات شیشه ساختمانی">
+<meta name="description" content="صنایع شیشه دوجداره آقایی در ارومیه، تولید و اجرای شیشه دوجداره، شیشه دکوراتیو، شیشه رومیزی و آینه سندبلاست">
 
-<meta name="keywords" content="شیشه دوجداره ارومیه, شیشه دکوراتیو, آینه سندبلاست, صنایع شیشه آقایی">
+<meta name="keywords" content="شیشه دوجداره ارومیه, شیشه بری ارومیه, شیشه رومیزی ارومیه, شیشه دکوراتیو">
 
 <meta name="robots" content="index, follow">
-
-<link rel="canonical" href="https://mohamadagayi081-code.github.io/-aghaeiglass/">
 
 
 <script type="application/ld+json">
 {
- "@context":"https://schema.org",
- "@type":"LocalBusiness",
- "name":"صنایع شیشه دوجداره آقایی",
- "telephone":"+989144406478",
- "address":{
- "@type":"PostalAddress",
- "addressLocality":"ارومیه",
- "addressCountry":"IR"
- },
- "url":"https://mohamadagayi081-code.github.io/-aghaeiglass/"
+"@context":"https://schema.org",
+"@type":"LocalBusiness",
+"name":"صنایع شیشه دوجداره آقایی",
+"telephone":"+989144406478",
+"address":{
+"@type":"PostalAddress",
+"addressLocality":"ارومیه",
+"addressCountry":"IR"
+}
 }
 </script>
 
@@ -43,37 +40,62 @@ font-family:tahoma,Arial;
 }
 
 
+:root{
+--blue:#8ed8ff;
+--dark:#080d12;
+--glass:rgba(255,255,255,.08);
+--line:rgba(255,255,255,.15);
+}
+
+
+
 body{
 
-background:#050505;
-color:#f5f5f5;
+background:#080d12;
+color:#fff;
 overflow-x:hidden;
 
 }
 
 
-/* رنگ و افکت شیشه */
 
-:root{
+/* پس زمینه شیشه ای */
 
---gold:#d4af37;
---blue:#0b3b4a;
---glass:rgba(255,255,255,.08);
+body::before{
+
+content:"";
+
+position:fixed;
+
+width:500px;
+height:500px;
+
+background:#0b5770;
+
+filter:blur(180px);
+
+opacity:.35;
+
+top:-200px;
+
+right:-200px;
+
+z-index:-1;
 
 }
 
 
 
-/* صفحه اول */
+/* هدر */
 
 .hero{
 
-min-height:100vh;
+min-height:90vh;
 
 background:
 linear-gradient(
-rgba(0,0,0,.35),
-rgba(0,0,0,.9)
+rgba(5,10,15,.35),
+rgba(5,10,15,.95)
 ),
 url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600");
 
@@ -81,41 +103,11 @@ background-size:cover;
 
 background-position:center;
 
-position:relative;
-
-}
-
-
-
-.hero::before{
-
-content:"";
-
-position:absolute;
-
-width:400px;
-
-height:400px;
-
-background:var(--gold);
-
-filter:blur(180px);
-
-opacity:.25;
-
-top:-150px;
-
-right:-150px;
-
 }
 
 
 
 nav{
-
-position:relative;
-
-z-index:2;
 
 display:flex;
 
@@ -123,7 +115,7 @@ justify-content:space-between;
 
 align-items:center;
 
-padding:35px 8%;
+padding:30px 7%;
 
 }
 
@@ -131,13 +123,13 @@ padding:35px 8%;
 
 .logo{
 
-font-size:32px;
+font-size:25px;
 
 font-weight:bold;
 
-letter-spacing:3px;
+color:var(--blue);
 
-color:var(--gold);
+letter-spacing:2px;
 
 }
 
@@ -145,46 +137,58 @@ color:var(--gold);
 
 nav a{
 
-color:white;
+color:#ddd;
 
 text-decoration:none;
 
-margin:10px;
+margin:8px;
+
+font-size:15px;
 
 transition:.3s;
 
 }
 
 
+
 nav a:hover{
 
-color:var(--gold);
+color:var(--blue);
 
 }
-/* متن صفحه اول */
+
+
+
+/* متن اول */
+
 
 .hero-content{
 
-position:relative;
-
-z-index:2;
-
 text-align:center;
 
-padding:120px 20px;
+padding:110px 20px;
 
 }
+
 
 
 .hero-content h1{
 
-font-size:55px;
+font-size:42px;
 
-color:var(--gold);
-
-text-shadow:0 0 35px rgba(212,175,55,.5);
+font-weight:700;
 
 margin-bottom:25px;
+
+color:#fff;
+
+}
+
+
+
+.hero-content h1 span{
+
+color:var(--blue);
 
 }
 
@@ -192,33 +196,32 @@ margin-bottom:25px;
 
 .hero-content p{
 
-font-size:22px;
+font-size:18px;
 
 line-height:2;
 
-color:#eee;
+color:#d5dce0;
 
 }
-
-
-
 /* دکمه ها */
 
 .btn{
 
 display:inline-block;
 
-padding:17px 40px;
+padding:13px 30px;
 
-margin:25px 10px;
+margin:25px 8px;
 
-border-radius:50px;
+border-radius:30px;
 
 text-decoration:none;
 
+font-size:15px;
+
 font-weight:bold;
 
-transition:.4s;
+transition:.3s;
 
 }
 
@@ -226,7 +229,7 @@ transition:.4s;
 
 .btn:hover{
 
-transform:translateY(-8px) scale(1.05);
+transform:translateY(-5px);
 
 }
 
@@ -234,9 +237,9 @@ transform:translateY(-8px) scale(1.05);
 
 .call{
 
-background:linear-gradient(135deg,#d4af37,#f5d76e);
+background:var(--blue);
 
-color:#111;
+color:#041018;
 
 }
 
@@ -244,7 +247,9 @@ color:#111;
 
 .instagram{
 
-background:linear-gradient(135deg,#0b3b4a,#123b52);
+background:rgba(255,255,255,.12);
+
+border:1px solid var(--line);
 
 color:white;
 
@@ -254,9 +259,10 @@ color:white;
 
 /* بخش ها */
 
+
 section{
 
-padding:90px 8%;
+padding:70px 7%;
 
 }
 
@@ -266,17 +272,26 @@ padding:90px 8%;
 
 text-align:center;
 
-font-size:38px;
+font-size:30px;
 
-color:var(--gold);
+margin-bottom:40px;
 
-margin-bottom:50px;
+color:#fff;
+
+}
+
+
+
+.title span{
+
+color:var(--blue);
 
 }
 
 
 
 /* کارت های شیشه ای */
+
 
 .cards{
 
@@ -294,9 +309,9 @@ flex-wrap:wrap;
 
 .card{
 
-width:270px;
+width:260px;
 
-padding:40px 25px;
+padding:30px 20px;
 
 text-align:center;
 
@@ -306,26 +321,27 @@ linear-gradient(
 
 145deg,
 
-rgba(255,255,255,.18),
+rgba(255,255,255,.12),
 
-rgba(255,255,255,.04)
+rgba(255,255,255,.03)
 
 );
 
 
-border:1px solid rgba(212,175,55,.45);
+border:1px solid var(--line);
 
-border-radius:30px;
+border-radius:22px;
 
-backdrop-filter:blur(20px);
+
+backdrop-filter:blur(15px);
 
 
 box-shadow:
 
-0 30px 80px rgba(0,0,0,.7);
+0 20px 50px rgba(0,0,0,.4);
 
 
-transition:.5s;
+transition:.4s;
 
 }
 
@@ -333,13 +349,9 @@ transition:.5s;
 
 .card:hover{
 
-transform:
+transform:translateY(-10px);
 
-translateY(-15px);
-
-box-shadow:
-
-0 40px 90px rgba(212,175,55,.2);
+border-color:var(--blue);
 
 }
 
@@ -347,9 +359,11 @@ box-shadow:
 
 .card h2{
 
-font-size:45px;
+font-size:35px;
 
-color:var(--gold);
+color:var(--blue);
+
+margin-bottom:15px;
 
 }
 
@@ -357,7 +371,9 @@ color:var(--gold);
 
 .card p{
 
-font-size:18px;
+font-size:16px;
+
+line-height:1.8;
 
 color:#ddd;
 
@@ -365,45 +381,66 @@ color:#ddd;
 
 
 
-/* واتساپ شناور */
+/* واتساپ */
+
 
 .whatsapp{
 
 position:fixed;
 
-bottom:25px;
+bottom:20px;
 
-left:25px;
+left:20px;
 
 background:#25D366;
 
 color:white;
 
-padding:15px 25px;
+padding:12px 20px;
 
-border-radius:50px;
+border-radius:30px;
 
 text-decoration:none;
 
-font-weight:bold;
+font-size:14px;
 
 z-index:999;
 
-box-shadow:
-
-0 10px 30px rgba(0,0,0,.5);
-
-transition:.3s;
-
 }
 
 
 
-.whatsapp:hover{
+/* موبایل */
 
-transform:scale(1.08);
+
+@media(max-width:700px){
+
+
+nav{
+
+flex-direction:column;
+
+gap:20px;
 
 }
+
+
+.hero-content h1{
+
+font-size:30px;
+
+}
+
+
+.hero-content p{
+
+font-size:16px;
+
+}
+
+
+}
+
 </style>
 
 </head>
@@ -412,8 +449,10 @@ transform:scale(1.08);
 <body>
 
 
-<a class="whatsapp" href="https://wa.me/989144406478" target="_blank">
-💬 مشاوره واتساپ
+<a class="whatsapp" href="https://wa.me/989144406478">
+
+💬 واتساپ
+
 </a>
 
 
@@ -433,8 +472,6 @@ AGHAEI GLASS
 
 <a href="#projects">نمونه کار</a>
 
-<a href="#about">درباره ما</a>
-
 <a href="#contact">تماس</a>
 
 </div>
@@ -445,30 +482,23 @@ AGHAEI GLASS
 
 <div class="hero-content">
 
-
 <h1>
-صنایع شیشه دوجداره آقایی
+صنایع شیشه <span>آقایی</span>
 </h1>
 
 
 <p>
-تولید و اجرای تخصصی شیشه دوجداره در ارومیه
+شیشه دوجداره، شیشه دکوراتیو و خدمات تخصصی شیشه در ارومیه
 </p>
-
-
-<p>
-شیشه دکوراتیو، آینه سندبلاست و شیشه ساختمانی
-</p>
-
 
 
 <a class="btn call" href="tel:09144406478">
-مشاوره و استعلام قیمت
+مشاوره رایگان
 </a>
 
 
 <a class="btn instagram" href="https://instagram.com/glass_aghaei_uromei">
-اینستاگرام
+نمونه کارها
 </a>
 
 
@@ -476,15 +506,11 @@ AGHAEI GLASS
 
 
 </header>
-
-
-
-
 <section id="services">
 
 
 <h2 class="title">
-خدمات ما
+خدمات <span>ما</span>
 </h2>
 
 
@@ -492,20 +518,38 @@ AGHAEI GLASS
 
 
 <div class="card">
+
 <h2>01</h2>
-<p>شیشه دوجداره</p>
+
+<p>
+شیشه دوجداره<br>
+مناسب ساختمان‌های مدرن و کم‌مصرف
+</p>
+
 </div>
 
 
 <div class="card">
+
 <h2>02</h2>
-<p>شیشه دکوراتیو</p>
+
+<p>
+شیشه دکوراتیو<br>
+طراحی خاص برای فضای داخلی
+</p>
+
 </div>
 
 
 <div class="card">
+
 <h2>03</h2>
-<p>آینه سندبلاست</p>
+
+<p>
+آینه سندبلاست<br>
+طرح‌های سفارشی و لوکس
+</p>
+
 </div>
 
 
@@ -521,7 +565,7 @@ AGHAEI GLASS
 
 
 <h2 class="title">
-نمونه کارهای صنایع شیشه آقایی
+نمونه کارهای <span>آقایی</span>
 </h2>
 
 
@@ -529,26 +573,35 @@ AGHAEI GLASS
 
 
 <div class="card">
+
 <h2>01</h2>
+
 <p>
-شیشه دوجداره ساختمان‌های مدرن
+شیشه دوجداره ساختمانی
 </p>
+
 </div>
 
 
 <div class="card">
+
 <h2>02</h2>
+
 <p>
-اجرای شیشه دکوراتیو و سفارشی
+شیشه رومیزی و سفارشی
 </p>
+
 </div>
 
 
 <div class="card">
+
 <h2>03</h2>
+
 <p>
-آینه سندبلاست
+شیشه دکوراتیو و آینه
 </p>
+
 </div>
 
 
@@ -564,7 +617,7 @@ AGHAEI GLASS
 
 
 <h2 class="title">
-چرا صنایع شیشه آقایی؟
+اعتماد مشتریان
 </h2>
 
 
@@ -572,26 +625,35 @@ AGHAEI GLASS
 
 
 <div class="card">
+
 <h2>15+</h2>
+
 <p>
 سال تجربه در صنعت شیشه
 </p>
+
 </div>
 
 
 <div class="card">
+
 <h2>1000+</h2>
+
 <p>
 پروژه اجرا شده
 </p>
+
 </div>
 
 
 <div class="card">
-<h2>24/7</h2>
+
+<h2>★★★★★</h2>
+
 <p>
-پاسخگویی و مشاوره
+رضایت مشتریان
 </p>
+
 </div>
 
 
@@ -599,15 +661,22 @@ AGHAEI GLASS
 
 
 </section>
+
+
+
+
 <section id="comments">
+
 
 <h2 class="title">
 نظر مشتریان
 </h2>
 
 
-<a class="btn call" 
-href="https://docs.google.com/forms/d/e/1FAIpQLSfYbFl3kDErm-gcfvT6OULQtbZI0CklJPuQudmKlle9TJeuXw/viewform" 
+<a class="btn call"
+
+href="https://docs.google.com/forms/d/e/1FAIpQLSfYbFl3kDErm-gcfvT6OULQtbZI0CklJPuQudmKlle9TJeuXw/viewform"
+
 target="_blank">
 
 ثبت نظر شما
@@ -615,36 +684,51 @@ target="_blank">
 </a>
 
 
+
 <div class="cards">
 
 
 <div class="card">
+
 <h2>★★★★★</h2>
+
 <p>
-کیفیت کار عالی و اجرای دقیق. از خدمات صنایع شیشه آقایی رضایت کامل داریم.
+اجرای دقیق و کیفیت عالی. از کار شیشه آقایی رضایت کامل داریم.
 </p>
+
 </div>
+
 
 
 <div class="card">
+
 <h2>★★★★★</h2>
+
 <p>
-رفتار حرفه‌ای، کیفیت بالا و تحویل به موقع.
+برخورد حرفه‌ای و تحویل به موقع.
 </p>
+
 </div>
+
 
 
 <div class="card">
+
 <h2>★★★★★</h2>
+
 <p>
-انتخابی مطمئن برای شیشه دوجداره در ارومیه.
+یکی از بهترین انتخاب‌ها برای شیشه در ارومیه.
 </p>
+
 </div>
 
 
 </div>
+
 
 </section>
+
+
 
 
 
@@ -652,30 +736,24 @@ target="_blank">
 
 
 <h2 class="title">
-صنایع شیشه دوجداره آقایی در ارومیه
+شیشه دوجداره در ارومیه
 </h2>
 
 
-<p style="text-align:center;line-height:2;font-size:18px;">
-
-تولید و اجرای شیشه دوجداره، شیشه دکوراتیو، آینه سندبلاست و خدمات شیشه ساختمانی در ارومیه.
-
-</p>
+<p style="text-align:center;line-height:2;color:#ddd">
 
 
-<p style="text-align:center;margin-top:20px;">
-📞 09144406478
+صنایع شیشه دوجداره آقایی در ارومیه ارائه‌دهنده خدمات شیشه دوجداره، شیشه بری، شیشه رومیزی، شیشه دکوراتیو و آینه سندبلاست می‌باشد.
+
+
 </p>
 
 
 </section>
-
-
-
 <section id="contact">
 
 <h2 class="title">
-تماس با صنایع شیشه دوجداره آقایی
+تماس با <span>صنایع شیشه آقایی</span>
 </h2>
 
 
@@ -687,9 +765,13 @@ target="_blank">
 <h2>📍</h2>
 
 <p>
-آدرس کارگاه:
+
+ارومیه
+
 <br>
-ارومیه، بلوار قاسمی، خیابان خاقانی
+
+بلوار قاسمی، خیابان خاقانی
+
 </p>
 
 </div>
@@ -701,9 +783,13 @@ target="_blank">
 <h2>📞</h2>
 
 <p>
-تماس و مشاوره:
-<br>
+
 09144406478
+
+<br>
+
+تماس و مشاوره
+
 </p>
 
 </div>
@@ -715,9 +801,13 @@ target="_blank">
 <h2>🕒</h2>
 
 <p>
-ساعات پاسخگویی:
-<br>
+
 همه روزه
+
+<br>
+
+پاسخگویی و پشتیبانی
+
 </p>
 
 </div>
@@ -726,19 +816,22 @@ target="_blank">
 </div>
 
 
+
 <div style="text-align:center;margin-top:40px;">
 
 
-<a class="btn call" 
-href="tel:09144406478">
+<a class="btn call" href="tel:09144406478">
 
 تماس مستقیم
 
 </a>
 
 
-<a class="btn instagram" 
-href="https://wa.me/989144406478">
+<a class="btn instagram"
+
+href="https://wa.me/989144406478"
+
+target="_blank">
 
 واتساپ
 
@@ -750,47 +843,33 @@ href="https://wa.me/989144406478">
 
 </section>
 
-<section id="seo">
-
-<h2 class="title">
-شیشه دوجداره در ارومیه | صنایع شیشه آقایی
-</h2>
-
-<p style="text-align:center;line-height:2;font-size:18px;">
-
-صنایع شیشه دوجداره آقایی در ارومیه، ارائه‌دهنده خدمات تخصصی 
-شیشه دوجداره، شیشه بری، شیشه رومیزی، شیشه دکوراتیو، آینه سندبلاست 
-و اجرای شیشه‌های ساختمانی می‌باشد.
-
-</p>
-
-<p style="text-align:center;line-height:2;font-size:18px;margin-top:20px;">
-
-با تجربه در تولید و اجرای انواع شیشه، آماده همکاری برای پروژه‌های ساختمانی، بازسازی و طراحی داخلی در ارومیه هستیم.
-
-</p>
-
-<p style="text-align:center;margin-top:20px;">
-📞 09144406478
-</p>
-
-</section>
 
 
-<footer id="contact">
+<footer style="
 
-<footer>
+padding:35px 20px;
+
+text-align:center;
+
+border-top:1px solid rgba(255,255,255,.1);
+
+color:#aaa;
+
+">
 
 <p>
-صنایع شیشه دوجداره آقایی | شیشه دوجداره ارومیه
+
+صنایع شیشه دوجداره آقایی
+
 </p>
 
-<p>
-تولید، اجرا و خدمات شیشه ساختمانی
+<p style="margin-top:10px;">
+
+شیشه دوجداره | شیشه بری | شیشه رومیزی | ارومیه
+
 </p>
 
 </footer>
-
 
 
 </body>
