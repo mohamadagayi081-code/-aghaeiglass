@@ -31,8 +31,6 @@ content="https://mohamadagayi081-code.github.io/-aghaeiglass/">
 content="صنایع شیشه دوجداره آقایی">
 
 
-<!-- ================= LOCAL BUSINESS ================= -->
-
 <script type="application/ld+json">
 {
  "@context":"https://schema.org",
@@ -75,19 +73,21 @@ html{
 
 body{
  font-family:Tahoma,Arial,sans-serif;
- background:#050505;
- color:#f5f5f5;
+ background:#f3f6f8;
+ color:#172027;
  line-height:1.8;
  overflow-x:hidden;
 }
 
 :root{
+ --blue:#137fa8;
+ --blue2:#52b9dc;
+ --dark:#172027;
+ --gray:#64727a;
+ --light:#f3f6f8;
  --white:#ffffff;
- --silver:#d8d8d8;
- --gray:#9a9a9a;
- --dark:#050505;
- --glass:rgba(255,255,255,.045);
- --border:rgba(255,255,255,.12);
+ --glass:rgba(255,255,255,.68);
+ --border:rgba(25,50,60,.12);
 }
 
 a{
@@ -100,13 +100,13 @@ a{
 body:before{
  content:"";
  position:fixed;
- width:500px;
- height:500px;
- right:-220px;
- top:-220px;
- background:#ffffff;
- filter:blur(190px);
- opacity:.055;
+ width:600px;
+ height:600px;
+ right:-250px;
+ top:-250px;
+ background:#b9e9f7;
+ filter:blur(170px);
+ opacity:.65;
  pointer-events:none;
  z-index:-1;
 }
@@ -114,13 +114,13 @@ body:before{
 body:after{
  content:"";
  position:fixed;
- width:450px;
- height:450px;
- left:-220px;
- bottom:-220px;
- background:#8c8c8c;
- filter:blur(190px);
- opacity:.035;
+ width:500px;
+ height:500px;
+ left:-250px;
+ bottom:-250px;
+ background:#d7e1e7;
+ filter:blur(160px);
+ opacity:.75;
  pointer-events:none;
  z-index:-1;
 }
@@ -135,7 +135,7 @@ nav{
  left:0;
  z-index:50;
 
- height:76px;
+ height:78px;
 
  display:flex;
  align-items:center;
@@ -143,22 +143,25 @@ nav{
 
  padding:0 6%;
 
- border-bottom:1px solid rgba(255,255,255,.09);
+ border-bottom:1px solid rgba(20,40,50,.10);
 
- background:rgba(0,0,0,.42);
+ background:rgba(255,255,255,.72);
 
- backdrop-filter:blur(20px);
+ backdrop-filter:blur(22px);
+ -webkit-backdrop-filter:blur(22px);
+
+ box-shadow:0 8px 30px rgba(20,40,50,.05);
 }
 
 .logo{
- color:#fff;
+ color:#16242b;
  font-size:19px;
  font-weight:bold;
  letter-spacing:3px;
 }
 
 .logo span{
- color:#bdbdbd;
+ color:var(--blue);
 }
 
 .links{
@@ -167,7 +170,7 @@ nav{
 }
 
 .links a{
- color:#c4c4c4;
+ color:#52616a;
  font-size:12px;
  padding:8px 11px;
  border-radius:20px;
@@ -176,14 +179,14 @@ nav{
 
 .links a:hover{
  color:#fff;
- background:rgba(255,255,255,.09);
+ background:var(--blue);
 }
 
 
 /* ================= HERO ================= */
 
 .hero{
- min-height:73vh;
+ min-height:76vh;
 
  display:flex;
  align-items:center;
@@ -193,8 +196,8 @@ nav{
 
  background:
  linear-gradient(
- rgba(0,0,0,.30),
- rgba(0,0,0,.94)
+ rgba(245,248,250,.58),
+ rgba(236,242,245,.88)
  ),
  url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1800");
 
@@ -212,7 +215,7 @@ nav{
 
  background:linear-gradient(
  transparent,
- #050505
+ #f3f6f8
  );
 }
 
@@ -230,15 +233,17 @@ nav{
 .eyebrow{
  display:inline-block;
 
- padding:7px 15px;
+ padding:7px 17px;
  margin-bottom:18px;
 
- border:1px solid rgba(255,255,255,.22);
+ border:1px solid rgba(19,127,168,.25);
  border-radius:30px;
 
- color:#e5e5e5;
+ color:var(--blue);
 
- background:rgba(255,255,255,.045);
+ background:rgba(255,255,255,.60);
+
+ backdrop-filter:blur(10px);
 
  font-size:11px;
  letter-spacing:1px;
@@ -247,19 +252,21 @@ nav{
 .hero h1{
  font-size:46px;
  line-height:1.4;
- font-weight:700;
+ font-weight:800;
  margin-bottom:16px;
+
+ color:#172027;
 }
 
 .hero h1 span{
- color:#fff;
+ color:var(--blue);
 }
 
 .hero p{
  max-width:720px;
  margin:auto;
 
- color:#c4c4c4;
+ color:#53636b;
 
  font-size:15px;
  line-height:2.1;
@@ -286,6 +293,8 @@ nav{
  font-weight:bold;
 
  transition:.3s;
+
+ cursor:pointer;
 }
 
 .btn:hover{
@@ -293,23 +302,30 @@ nav{
 }
 
 .primary{
- background:#fff;
- color:#050505;
+ background:#172027;
+ color:#fff;
+
+ box-shadow:0 8px 25px rgba(20,40,50,.15);
 }
 
 .primary:hover{
- background:#dcdcdc;
+ background:var(--blue);
 }
 
 .outline{
- color:#fff;
- border:1px solid rgba(255,255,255,.22);
- background:rgba(255,255,255,.055);
+ color:#172027;
+
+ border:1px solid rgba(20,40,50,.16);
+
+ background:rgba(255,255,255,.58);
+
  backdrop-filter:blur(10px);
 }
 
 .outline:hover{
- background:rgba(255,255,255,.12);
+ background:#fff;
+ border-color:var(--blue);
+ color:var(--blue);
 }
 
 
@@ -327,7 +343,7 @@ section{
 }
 
 .section-tag{
- color:#aaa;
+ color:var(--blue);
  font-size:11px;
  letter-spacing:2px;
  margin-bottom:8px;
@@ -336,10 +352,11 @@ section{
 .section-title{
  font-size:29px;
  line-height:1.5;
+ color:#172027;
 }
 
 .section-title span{
- color:#fff;
+ color:var(--blue);
 }
 
 .section-text{
@@ -348,7 +365,7 @@ section{
 
  text-align:center;
 
- color:#999;
+ color:#68767d;
 
  font-size:13px;
  line-height:2;
@@ -367,33 +384,38 @@ section{
  padding:30px;
 
  border:1px solid var(--border);
- border-radius:20px;
+ border-radius:22px;
 
  background:
  linear-gradient(
  135deg,
- rgba(255,255,255,.065),
- rgba(255,255,255,.018)
+ rgba(255,255,255,.90),
+ rgba(255,255,255,.58)
  );
 
- backdrop-filter:blur(16px);
+ backdrop-filter:blur(18px);
+ -webkit-backdrop-filter:blur(18px);
+
+ box-shadow:0 12px 35px rgba(30,60,70,.06);
 
  transition:.3s;
 }
 
 .intro-card:hover{
- border-color:rgba(255,255,255,.25);
- transform:translateY(-4px);
+ border-color:rgba(19,127,168,.25);
+ transform:translateY(-5px);
+
+ box-shadow:0 18px 40px rgba(30,60,70,.09);
 }
 
 .intro-card h3{
  font-size:18px;
  margin-bottom:12px;
- color:#fff;
+ color:#172027;
 }
 
 .intro-card p{
- color:#aaa;
+ color:#66757c;
  font-size:13px;
  line-height:2;
 }
@@ -413,19 +435,26 @@ section{
  padding:24px;
 
  border:1px solid var(--border);
- border-radius:20px;
+ border-radius:22px;
 
- background:var(--glass);
+ background:rgba(255,255,255,.68);
 
- backdrop-filter:blur(14px);
+ backdrop-filter:blur(16px);
+ -webkit-backdrop-filter:blur(16px);
+
+ box-shadow:0 10px 30px rgba(30,60,70,.045);
 
  transition:.35s;
 }
 
 .service:hover{
- transform:translateY(-6px);
- border-color:rgba(255,255,255,.30);
- background:rgba(255,255,255,.075);
+ transform:translateY(-7px);
+
+ border-color:rgba(19,127,168,.30);
+
+ background:rgba(255,255,255,.90);
+
+ box-shadow:0 18px 40px rgba(30,60,70,.10);
 }
 
 .icon{
@@ -440,22 +469,23 @@ section{
 
  border-radius:14px;
 
- background:rgba(255,255,255,.07);
+ background:rgba(19,127,168,.08);
 
- color:#fff;
+ color:var(--blue);
 
  font-size:20px;
 
- border:1px solid rgba(255,255,255,.08);
+ border:1px solid rgba(19,127,168,.10);
 }
 
 .service h3{
  font-size:15px;
  margin-bottom:6px;
+ color:#172027;
 }
 
 .service p{
- color:#919191;
+ color:#78858b;
  font-size:12px;
  line-height:1.9;
 }
@@ -479,29 +509,32 @@ section{
  flex-direction:column;
  justify-content:center;
 
- border-radius:24px;
+ border-radius:25px;
 
  background:
  linear-gradient(
  135deg,
- rgba(255,255,255,.08),
- rgba(255,255,255,.02)
+ rgba(255,255,255,.95),
+ rgba(220,239,245,.72)
  );
 
- border:1px solid var(--border);
+ border:1px solid rgba(19,127,168,.13);
+
+ box-shadow:0 15px 40px rgba(30,60,70,.07);
 }
 
 .double-main h2{
  font-size:30px;
  margin-bottom:15px;
+ color:#172027;
 }
 
 .double-main h2 span{
- color:#fff;
+ color:var(--blue);
 }
 
 .double-main p{
- color:#aaa;
+ color:#64737a;
  font-size:13px;
  line-height:2.1;
  max-width:600px;
@@ -515,29 +548,32 @@ section{
 .double-item{
  padding:20px;
 
- border-radius:18px;
+ border-radius:19px;
 
  border:1px solid var(--border);
 
- background:rgba(255,255,255,.04);
+ background:rgba(255,255,255,.72);
+
+ box-shadow:0 8px 25px rgba(30,60,70,.04);
 
  transition:.3s;
 }
 
 .double-item:hover{
- transform:translateX(-4px);
- border-color:rgba(255,255,255,.25);
+ transform:translateX(-5px);
+
+ border-color:rgba(19,127,168,.25);
 }
 
 .double-item strong{
  display:block;
- color:#fff;
+ color:var(--blue);
  font-size:13px;
  margin-bottom:3px;
 }
 
 .double-item span{
- color:#8e8e8e;
+ color:#77848a;
  font-size:12px;
 }
 
@@ -553,18 +589,21 @@ section{
 .project{
  overflow:hidden;
 
- border-radius:20px;
+ border-radius:22px;
 
  border:1px solid var(--border);
 
- background:#0b0b0b;
+ background:#fff;
+
+ box-shadow:0 12px 35px rgba(30,60,70,.07);
 
  transition:.35s;
 }
 
 .project:hover{
- transform:translateY(-6px);
- border-color:rgba(255,255,255,.25);
+ transform:translateY(-7px);
+
+ box-shadow:0 20px 45px rgba(30,60,70,.12);
 }
 
 .project img{
@@ -589,10 +628,11 @@ section{
 .project-info h3{
  font-size:14px;
  margin-bottom:4px;
+ color:#172027;
 }
 
 .project-info p{
- color:#888;
+ color:#7b878d;
  font-size:11px;
 }
 
@@ -609,34 +649,96 @@ section{
  text-align:center;
  padding:28px 18px;
 
- border-radius:20px;
+ border-radius:22px;
 
- background:rgba(255,255,255,.035);
+ background:rgba(255,255,255,.68);
 
  border:1px solid var(--border);
+
+ box-shadow:0 10px 30px rgba(30,60,70,.045);
 
  transition:.3s;
 }
 
 .why-card:hover{
  transform:translateY(-5px);
- border-color:rgba(255,255,255,.24);
+
+ border-color:rgba(19,127,168,.25);
 }
 
 .why-number{
  font-size:25px;
- color:#fff;
+ color:var(--blue);
  margin-bottom:8px;
 }
 
 .why-card h3{
  font-size:14px;
  margin-bottom:6px;
+ color:#172027;
 }
 
 .why-card p{
- color:#8f8f8f;
+ color:#7b878d;
  font-size:11px;
+}
+
+
+/* ================= FAQ ================= */
+
+.faq{
+ max-width:850px;
+ margin:auto;
+}
+
+details{
+ margin-bottom:9px;
+
+ border:1px solid var(--border);
+ border-radius:16px;
+
+ background:rgba(255,255,255,.72);
+
+ overflow:hidden;
+
+ box-shadow:0 6px 20px rgba(30,60,70,.035);
+}
+
+summary{
+ cursor:pointer;
+
+ padding:17px 20px;
+
+ font-size:13px;
+ font-weight:bold;
+
+ color:#172027;
+
+ list-style:none;
+}
+
+summary::-webkit-details-marker{
+ display:none;
+}
+
+summary:after{
+ content:"+";
+ float:left;
+ color:var(--blue);
+ font-size:18px;
+}
+
+details[open] summary:after{
+ content:"−";
+}
+
+details p{
+ padding:0 20px 18px;
+
+ color:#718087;
+
+ font-size:12px;
+ line-height:2;
 }
 
 
@@ -651,17 +753,19 @@ section{
 .contact-info{
  padding:30px;
 
- border-radius:22px;
+ border-radius:23px;
 
  border:1px solid var(--border);
 
- background:rgba(255,255,255,.04);
+ background:rgba(255,255,255,.72);
+
+ box-shadow:0 12px 35px rgba(30,60,70,.06);
 }
 
 .contact-item{
  padding:14px 0;
 
- border-bottom:1px solid rgba(255,255,255,.07);
+ border-bottom:1px solid rgba(20,40,50,.08);
 }
 
 .contact-item:last-child{
@@ -670,21 +774,26 @@ section{
 
 .contact-item small{
  display:block;
- color:#aaa;
+ color:var(--blue);
  font-size:10px;
  margin-bottom:3px;
 }
 
 .contact-item strong{
- color:#fff;
+ color:#172027;
  font-size:13px;
 }
 
 .map{
  overflow:hidden;
- border-radius:22px;
+
+ border-radius:23px;
+
  border:1px solid var(--border);
+
  min-height:330px;
+
+ box-shadow:0 12px 35px rgba(30,60,70,.06);
 }
 
 .map iframe{
@@ -702,25 +811,28 @@ section{
 
  padding:50px 20px;
 
- border-radius:25px;
+ border-radius:27px;
 
  background:
  linear-gradient(
  135deg,
- rgba(255,255,255,.075),
- rgba(255,255,255,.02)
+ rgba(255,255,255,.95),
+ rgba(213,237,245,.78)
  );
 
- border:1px solid var(--border);
+ border:1px solid rgba(19,127,168,.13);
+
+ box-shadow:0 15px 45px rgba(30,60,70,.08);
 }
 
 .cta h2{
  font-size:27px;
  margin-bottom:10px;
+ color:#172027;
 }
 
 .cta p{
- color:#999;
+ color:#68767d;
  font-size:12px;
  margin-bottom:20px;
 }
@@ -751,7 +863,7 @@ section{
 
  font-size:22px;
 
- box-shadow:0 8px 25px rgba(0,0,0,.35);
+ box-shadow:0 8px 25px rgba(0,0,0,.20);
 }
 
 
@@ -762,15 +874,17 @@ footer{
 
  text-align:center;
 
- border-top:1px solid rgba(255,255,255,.08);
+ border-top:1px solid rgba(20,40,50,.10);
 
- color:#707070;
+ background:rgba(255,255,255,.45);
+
+ color:#7b878d;
 
  font-size:11px;
 }
 
 footer strong{
- color:#d5d5d5;
+ color:#172027;
 }
 
 .footer-links{
@@ -778,12 +892,12 @@ footer strong{
 }
 
 .footer-links a{
- color:#888;
+ color:#69777e;
  margin:0 6px;
 }
 
 .footer-links a:hover{
- color:#fff;
+ color:var(--blue);
 }
 
 
@@ -793,7 +907,7 @@ footer strong{
 
  nav{
   height:auto;
-  min-height:65px;
+  min-height:68px;
   padding:12px 4%;
   flex-direction:column;
   gap:8px;
@@ -815,7 +929,7 @@ footer strong{
  }
 
  .hero{
-  min-height:78vh;
+  min-height:80vh;
  }
 
  .hero-content{
@@ -1028,6 +1142,8 @@ AGHAEI <span>GLASS</span>
 <a href="#doubleglass">دوجداره</a>
 
 <a href="#portfolio">نمونه‌کار</a>
+
+<a href="#faq">سؤالات</a>
 
 <a href="#contact">تماس</a>
 
@@ -1494,6 +1610,85 @@ WHY AGHAEI
 </p>
 
 </div>
+
+
+</div>
+
+</section>
+
+
+<!-- ================= FAQ ================= -->
+
+<section id="faq">
+
+<div class="section-head">
+
+<div class="section-tag">
+FAQ
+</div>
+
+<h2 class="section-title">
+سؤالات <span>متداول</span>
+</h2>
+
+</div>
+
+
+<div class="faq">
+
+
+<details>
+
+<summary>
+شیشه‌بری در ارومیه چه خدماتی دارد؟
+</summary>
+
+<p>
+برش شیشه سفارشی، شیشه ساختمانی،
+شیشه رومیزی، شیشه دکوراتیو و شیشه دوجداره.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+آیا شیشه در ابعاد سفارشی برش می‌خورد؟
+</summary>
+
+<p>
+بله، سفارش‌ها بر اساس ابعاد و نیاز مشتری آماده می‌شوند.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+شیشه دوجداره در ارومیه تولید می‌کنید؟
+</summary>
+
+<p>
+بله، مجموعه آقایی در زمینه تولید و آماده‌سازی
+شیشه دوجداره فعالیت می‌کند.
+</p>
+
+</details>
+
+
+<details>
+
+<summary>
+قیمت شیشه‌بری چگونه محاسبه می‌شود؟
+</summary>
+
+<p>
+قیمت به نوع شیشه، ضخامت، ابعاد و نوع سفارش بستگی دارد.
+</p>
+
+</details>
 
 
 </div>
