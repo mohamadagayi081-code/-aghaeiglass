@@ -1,221 +1,401 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شیشه‌بری در ارومیه | شیشه‌بری آقایی</title>
-    <meta name="description"
-        content="شیشه‌بری در ارومیه توسط صنایع شیشه دوجداره آقایی؛ تولید و اجرای شیشه دوجداره، شیشه ساختمانی و شیشه دکوراتیو با کیفیت بالا در ارومیه.">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical"
-        href="https://mohamadagayi081-code.github.io/-aghaeiglass/shishe-bori-urmia.html">
-    <meta property="og:title"
-        content="شیشه‌بری در ارومیه | صنایع شیشه دوجداره آقایی">
-    <meta property="og:description"
-        content="خدمات شیشه‌بری، تولید شیشه دوجداره و اجرای شیشه‌های ساختمانی در ارومیه">
-    <meta property="og:type" content="website">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: Tahoma, Arial, sans-serif;
-            background: #0b0b0b;
-            color: #fff;
-            line-height: 2;
-        }
-        header {
-            padding: 25px 8%;
-            border-bottom: 1px solid #222;
-            text-align: center;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        .hero {
-            padding: 90px 8%;
-            text-align: center;
-            background: linear-gradient(135deg, #111, #050505);
-        }
-        .hero h1 {
-            font-size: clamp(30px, 5vw, 58px);
-            margin-bottom: 25px;
-        }
-        .hero h1 span {
-            color: #aaa;
-        }
-        .hero p {
-            max-width: 850px;
-            margin: auto;
-            color: #ccc;
-            font-size: 18px;
-        }
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 70px 8%;
-        }
-        h2 {
-            font-size: 30px;
-            margin-bottom: 25px;
-        }
-        p {
-            color: #ccc;
-            margin-bottom: 20px;
-        }
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 20px;
-            margin-top: 35px;
-        }
-        .card {
-            background: #151515;
-            border: 1px solid #292929;
-            border-radius: 18px;
-            padding: 30px;
-        }
-        .card h3 {
-            margin-bottom: 12px;
-        }
-        .cta {
-            text-align: center;
-            background: #151515;
-            border-radius: 25px;
-            padding: 50px 25px;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 13px 28px;
-            border-radius: 12px;
-            background: #fff;
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        footer {
-            text-align: center;
-            padding: 35px;
-            color: #888;
-            border-top: 1px solid #222;
-        }
-    </style>
-    <!-- LocalBusiness Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "صنایع شیشه دوجداره آقایی",
-        "description": "شیشه‌بری در ارومیه، تولید شیشه دوجداره و اجرای شیشه‌های ساختمانی و دکوراتیو.",
-        "url": "https://mohamadagayi081-code.github.io/-aghaeiglass/shishe-bori-urmia.html",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "ارومیه",
-            "addressRegion": "آذربایجان غربی",
-            "addressCountry": "IR"
-        },
-        "areaServed": {
-            "@type": "City",
-            "name": "ارومیه"
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>شیشه‌بری در ارومیه | صنایع شیشه دوجداره آقایی</title>
+<meta name="description" content="شیشه‌بری در ارومیه با صنایع شیشه دوجداره آقایی؛ تولید و اجرای شیشه دوجداره، شیشه ساختمانی و شیشه دکوراتیو.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mohamadagayi081-code.github.io/-aghaeiglass/shishe-bori-urmia.html">
+<meta property="og:title" content="شیشه‌بری در ارومیه | صنایع شیشه دوجداره آقایی">
+<meta property="og:description" content="تولید و اجرای شیشه دوجداره و انواع شیشه‌های ساختمانی و دکوراتیو در ارومیه.">
+<meta property="og:type" content="website">
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family:Tahoma,Arial,sans-serif;
+    background:#080808;
+    color:#fff;
+    line-height:1.9;
+}
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    padding:15px 6%;
+    background:rgba(8,8,8,.94);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid #222;
+}
+.nav{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+.logo{
+    color:#fff;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:bold;
+}
+.nav-links{
+    display:flex;
+    gap:20px;
+}
+.nav-links a{
+    color:#aaa;
+    text-decoration:none;
+    font-size:13px;
+    transition:.3s;
+}
+.nav-links a:hover{
+    color:#fff;
+}
+.hero{
+    padding:85px 20px 70px;
+    text-align:center;
+    background:
+    radial-gradient(circle at top,#202020 0,#080808 62%);
+}
+.hero h1{
+    font-size:clamp(32px,6vw,58px);
+    line-height:1.4;
+    margin-bottom:18px;
+}
+.hero h1 span{
+    color:#888;
+}
+.hero p{
+    max-width:720px;
+    margin:auto;
+    color:#aaa;
+    font-size:17px;
+}
+.hero-buttons{
+    margin-top:28px;
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    border-radius:11px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+.btn-main{
+    background:#fff;
+    color:#000;
+}
+.btn-dark{
+    background:#151515;
+    color:#fff;
+    border:1px solid #444;
+}
+.btn:hover{
+    transform:translateY(-3px);
+}
+.container{
+    max-width:1050px;
+    margin:auto;
+    padding:55px 20px;
+}
+.section-title{
+    text-align:center;
+    margin-bottom:30px;
+}
+.section-title h2{
+    font-size:29px;
+    margin-bottom:7px;
+}
+.section-title p{
+    color:#777;
+    font-size:14px;
+}
+.intro{
+    max-width:780px;
+    margin:auto;
+    text-align:center;
+}
+.intro p{
+    color:#bbb;
+    font-size:16px;
+}
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
+}
+.card{
+    background:linear-gradient(145deg,#181818,#101010);
+    border:1px solid #292929;
+    border-radius:18px;
+    padding:28px 18px;
+    text-align:center;
+    transition:.3s;
+}
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#555;
+}
+.card h3{
+    font-size:18px;
+    margin-bottom:8px;
+}
+.card p{
+    color:#888;
+    font-size:13px;
+}
+.why{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+}
+.why-box{
+    padding:25px 18px;
+    background:#111;
+    border:1px solid #252525;
+    border-radius:16px;
+    text-align:center;
+}
+.why-box strong{
+    display:block;
+    font-size:18px;
+    margin-bottom:6px;
+}
+.why-box span{
+    color:#888;
+    font-size:13px;
+}
+.cta{
+    text-align:center;
+    background:linear-gradient(145deg,#191919,#0e0e0e);
+    border:1px solid #292929;
+    border-radius:24px;
+    padding:45px 20px;
+}
+.cta h2{
+    font-size:26px;
+    margin-bottom:8px;
+}
+.cta p{
+    color:#999;
+    font-size:14px;
+}
+.cta-buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+footer{
+    text-align:center;
+    padding:30px 15px;
+    color:#666;
+    border-top:1px solid #222;
+    font-size:13px;
+}
+.quick-contact{
+    position:fixed;
+    bottom:18px;
+    left:18px;
+    z-index:2000;
+    background:#fff;
+    color:#000;
+    padding:11px 18px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:13px;
+    box-shadow:0 5px 25px rgba(0,0,0,.5);
+}
+@media(max-width:800px){
+    .nav{
+        flex-direction:column;
+        gap:10px;
     }
-    </script>
+    .nav-links{
+        gap:15px;
+    }
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+    .why{
+        grid-template-columns:1fr;
+    }
+}
+@media(max-width:500px){
+    .hero{
+        padding:65px 18px;
+    }
+    .hero h1{
+        font-size:34px;
+    }
+    .hero p{
+        font-size:15px;
+    }
+    .cards{
+        grid-template-columns:1fr;
+    }
+    .nav-links a{
+        font-size:12px;
+    }
+}
+</style>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"LocalBusiness",
+ "name":"صنایع شیشه دوجداره آقایی",
+ "description":"شیشه‌بری در ارومیه، تولید شیشه دوجداره و اجرای شیشه‌های ساختمانی و دکوراتیو.",
+ "url":"https://mohamadagayi081-code.github.io/-aghaeiglass/shishe-bori-urmia.html",
+ "telephone":"+989144406478",
+ "address":{
+   "@type":"PostalAddress",
+   "addressLocality":"ارومیه",
+   "addressRegion":"آذربایجان غربی",
+   "addressCountry":"IR"
+ },
+ "areaServed":{
+   "@type":"City",
+   "name":"ارومیه"
+ }
+}
+</script>
 </head>
 <body>
 <header>
-    <a href="index.html">صنایع شیشه دوجداره آقایی</a>
+<div class="nav">
+<a class="logo" href="index.html">
+صنایع شیشه دوجداره آقایی
+</a>
+<nav class="nav-links">
+
+خانه
+خدمات
+مزایای ما
+تماس
+
+</nav>
+</div>
 </header>
 <section class="hero">
-    <h1>
-        شیشه‌بری در ارومیه
-        <span>| شیشه‌بری آقایی</span>
-    </h1>
-    <p>
-        صنایع شیشه دوجداره آقایی؛ تولیدکننده و مجری تخصصی
-        شیشه دوجداره و انواع شیشه‌های ساختمانی و دکوراتیو در ارومیه.
-    </p>
+<h1>
+شیشه‌بری در ارومیه
+<span>| آقایی</span>
+</h1>
+<p>
+تولید و اجرای شیشه دوجداره، ساختمانی و دکوراتیو
+با کیفیت و دقت بالا در ارومیه
+</p>
+<div class="hero-buttons">
+<a class="btn btn-main" href="#contact">
+تماس و سفارش
+</a>
+<a class="btn btn-dark" href="index.html">
+مشاهده سایت اصلی
+</a>
+</div>
 </section>
 <section class="container">
-    <h2>شیشه‌بری آقایی در ارومیه</h2>
-    <p>
-        اگر به دنبال شیشه‌بری در ارومیه هستید،
-        صنایع شیشه دوجداره آقایی خدمات تخصصی تولید و اجرای
-        انواع شیشه‌های ساختمانی را ارائه می‌دهد.
-    </p>
-    <p>
-        مجموعه آقایی با تمرکز بر کیفیت تولید و اجرای دقیق،
-        در زمینه شیشه دوجداره، شیشه‌های ساختمانی و شیشه دکوراتیو
-        در ارومیه فعالیت می‌کند.
-    </p>
-    <p>
-        هدف ما ارائه شیشه با کیفیت، اندازه‌گیری دقیق و اجرای
-        حرفه‌ای برای ساختمان‌های مسکونی، تجاری و پروژه‌های ساختمانی
-        در ارومیه است.
-    </p>
+<div class="section-title">
+<h2>شیشه‌بری آقایی در ارومیه</h2>
+<p>تخصص، کیفیت و اجرای دقیق</p>
+</div>
+<div class="intro">
+<p>
+صنایع شیشه دوجداره آقایی، تولیدکننده و مجری
+شیشه دوجداره و انواع شیشه‌های ساختمانی و دکوراتیو
+در ارومیه است.
+</p>
+</div>
 </section>
-<section class="container">
-    <h2>خدمات شیشه‌بری در ارومیه</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>شیشه دوجداره</h3>
-            <p>
-                تولید شیشه دوجداره برای استفاده در پنجره‌ها و
-                ساختمان‌های مسکونی و تجاری.
-            </p>
-        </div>
-        <div class="card">
-            <h3>شیشه ساختمانی</h3>
-            <p>
-                ارائه و اجرای انواع شیشه‌های مورد استفاده
-                در پروژه‌های ساختمانی.
-            </p>
-        </div>
-        <div class="card">
-            <h3>شیشه دکوراتیو</h3>
-            <p>
-                شیشه‌های دکوراتیو برای طراحی داخلی و ایجاد
-                ظاهری مدرن و متفاوت.
-            </p>
-        </div>
-        <div class="card">
-            <h3>شیشه‌بری سفارشی</h3>
-            <p>
-                برش و آماده‌سازی شیشه مطابق اندازه و نیاز پروژه.
-            </p>
-        </div>
-    </div>
+<section class="container" id="services">
+<div class="section-title">
+<h2>خدمات شیشه‌بری در ارومیه</h2>
+<p>خدمات تخصصی شیشه برای ساختمان و پروژه‌ها</p>
+</div>
+<div class="cards">
+<div class="card">
+<h3>شیشه دوجداره</h3>
+<p>تولید شیشه دوجداره مناسب ساختمان‌های مسکونی و تجاری.</p>
+</div>
+<div class="card">
+<h3>شیشه ساختمانی</h3>
+<p>تأمین و اجرای انواع شیشه‌های مورد استفاده در ساختمان.</p>
+</div>
+<div class="card">
+<h3>شیشه دکوراتیو</h3>
+<p>شیشه‌های دکوراتیو برای طراحی داخلی و نمای مدرن.</p>
+</div>
+<div class="card">
+<h3>شیشه‌بری سفارشی</h3>
+<p>برش و آماده‌سازی شیشه مطابق اندازه و نیاز پروژه.</p>
+</div>
+</div>
 </section>
-<section class="container">
-    <h2>چرا شیشه‌بری آقایی؟</h2>
-    <p>
-        انتخاب شیشه مناسب و اجرای دقیق آن نقش مهمی در کیفیت
-        نهایی ساختمان دارد. ما تلاش می‌کنیم سفارش‌ها با دقت،
-        کیفیت و متناسب با نیاز هر پروژه انجام شوند.
-    </p>
-    <p>
-        صنایع شیشه دوجداره آقایی در ارومیه آماده همکاری با
-        مشتریان، سازندگان و پروژه‌های ساختمانی است.
-    </p>
+<section class="container" id="why">
+<div class="section-title">
+<h2>چرا آقایی؟</h2>
+<p>تمرکز ما روی کیفیت و اجرای دقیق است.</p>
+</div>
+<div class="why">
+<div class="why-box">
+<strong>تولید تخصصی</strong>
+<span>تولید شیشه دوجداره با تمرکز بر کیفیت</span>
+</div>
+<div class="why-box">
+<strong>اندازه‌گیری دقیق</strong>
+<span>آماده‌سازی شیشه متناسب با پروژه</span>
+</div>
+<div class="why-box">
+<strong>اجرای حرفه‌ای</strong>
+<span>مناسب پروژه‌های مسکونی و تجاری</span>
+</div>
+</div>
 </section>
-<section class="container">
-    <div class="cta">
-        <h2>برای سفارش شیشه در ارومیه با ما تماس بگیرید</h2>
-        <p>
-            برای مشاوره، استعلام قیمت و ثبت سفارش شیشه
-            با صنایع شیشه دوجداره آقایی در ارتباط باشید.
-        </p>
-        <a class="btn" href="index.html">
-            بازگشت به سایت
-        </a>
-    </div>
+<section class="container" id="contact">
+<div class="cta">
+<h2>سفارش شیشه در ارومیه</h2>
+<p>
+برای مشاوره، استعلام قیمت و ثبت سفارش
+با صنایع شیشه دوجداره آقایی در ارتباط باشید.
+</p>
+<div class="cta-buttons">
+<a class="btn btn-main" href="tel:09144406478">
+📞 تماس با ما
+</a>
+<a class="btn btn-dark" href="https://wa.me/989144406478">
+💬 واتساپ
+</a>
+<a class="btn btn-dark" href="index.html">
+بازگشت به سایت
+</a>
+</div>
+</div>
 </section>
 <footer>
-    © صنایع شیشه دوجداره آقایی | شیشه‌بری در ارومیه
+
+© صنایع شیشه دوجداره آقایی
+شیشه‌بری در ارومیه
+
 </footer>
+<a class="quick-contact" href="tel:09144406478">
+تماس سریع
+</a>
 </body>
 </html>
