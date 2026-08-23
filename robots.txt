@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mohamadagayi081-code.github.io/-aghaeiglass/sitemap.xml
