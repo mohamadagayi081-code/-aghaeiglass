@@ -15,8 +15,6 @@ content="شیشه در ارومیه | شیشه دوجداره ارومیه | ص�
 content="تولید و ارائه انواع شیشه در ارومیه و شیشه دوجداره ارومیه توسط صنایع شیشه آقایی.">
 <meta property="og:url"
 content="https://mohamadagayi081-code.github.io/-aghaeiglass/">
-<meta property="og:image"
-content="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=90">
 <meta name="theme-color" content="#123B4A">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,6 +22,9 @@ content="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=forma
 rel="stylesheet">
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- =========================
+     SEO SCHEMA
+========================= -->
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -50,1170 +51,1196 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 }
 </script>
 <style>
-/* =========================
-RESET
-========================= */
+/* =====================================================
+   RESET
+===================================================== */
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 html{
-scroll-behavior:smooth;
+    scroll-behavior:smooth;
 }
 body{
-font-family:"Vazirmatn",Tahoma,sans-serif;
-background:#f4f7f8;
-color:#17252b;
-line-height:1.9;
-overflow-x:hidden;
+    font-family:"Vazirmatn",Tahoma,sans-serif;
+    background:#f5f7f8;
+    color:#17252b;
+    line-height:1.9;
+    overflow-x:hidden;
 }
 a{
-text-decoration:none;
-color:inherit;
+    text-decoration:none;
+    color:inherit;
 }
 img{
-max-width:100%;
-display:block;
+    max-width:100%;
+    display:block;
 }
 button{
-font-family:inherit;
-}
-:root{
---navy:#123B4A;
---navy-dark:#0A2933;
---navy-light:#1D5668;
---blue:#2D7289;
---text:#17252b;
---muted:#718087;
---white:#fff;
---light:#f4f7f8;
---light2:#eaf0f2;
---border:#dfe7ea;
---shadow:0 25px 70px rgba(18,59,74,.09);
+    font-family:inherit;
 }
 .container{
-width:min(1180px,92%);
-margin:auto;
+    width:min(1180px,92%);
+    margin:auto;
 }
-/* =========================
-HEADER
-========================= */
+/* =====================================================
+   COLORS
+===================================================== */
+:root{
+    --navy:#123B4A;
+    --navy-dark:#0C2B36;
+    --navy-light:#1C5264;
+    --blue:#2D7289;
+    --text:#17252b;
+    --muted:#6d7b81;
+    --white:#ffffff;
+    --light:#f5f7f8;
+    --light2:#edf2f4;
+    --border:#e1e8eb;
+    --shadow:0 20px 60px rgba(18,59,74,.08);
+}
+/* =====================================================
+   HEADER
+===================================================== */
 .header{
-position:fixed;
-top:0;
-left:0;
-right:0;
-z-index:1000;
-background:rgba(255,255,255,.92);
-backdrop-filter:blur(20px);
-border-bottom:1px solid rgba(18,59,74,.08);
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1000;
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(18,59,74,.08);
 }
 .nav{
-height:78px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:25px;
+    height:78px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
 }
 .logo{
-display:flex;
-align-items:center;
-gap:10px;
-font-size:17px;
-font-weight:900;
-color:var(--navy);
-white-space:nowrap;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:900;
+    color:var(--navy);
+    font-size:18px;
 }
 .logo-mark{
-width:39px;
-height:39px;
-border-radius:11px;
-display:flex;
-align-items:center;
-justify-content:center;
-background:var(--navy);
-color:white;
-box-shadow:0 8px 20px rgba(18,59,74,.15);
+    width:38px;
+    height:38px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--navy);
+    color:#fff;
+    font-size:17px;
 }
 .logo span{
-color:var(--blue);
+    color:var(--blue);
 }
 .nav-links{
-display:flex;
-align-items:center;
-gap:5px;
+    display:flex;
+    align-items:center;
+    gap:7px;
 }
 .nav-links a{
-font-size:11px;
-color:#56666d;
-padding:9px 12px;
-border-radius:9px;
-transition:.25s;
+    padding:8px 13px;
+    border-radius:8px;
+    color:#506067;
+    font-size:12px;
+    transition:.25s;
 }
 .nav-links a:hover{
-background:#edf4f6;
-color:var(--navy);
+    background:#edf4f6;
+    color:var(--navy);
 }
 .nav-call{
-display:flex;
-align-items:center;
-gap:8px;
-background:var(--navy);
-color:white;
-padding:11px 17px;
-border-radius:10px;
-font-size:10px;
-font-weight:800;
-transition:.3s;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:var(--navy);
+    color:#fff;
+    padding:11px 17px;
+    border-radius:10px;
+    font-size:11px;
+    font-weight:700;
+    transition:.25s;
 }
 .nav-call:hover{
-background:var(--navy-dark);
-transform:translateY(-2px);
+    background:var(--navy-dark);
+    transform:translateY(-2px);
 }
-/* =========================
-HERO
-========================= */
+/* =====================================================
+   HERO
+===================================================== */
 .hero{
-padding-top:78px;
-background:#fff;
-min-height:760px;
-display:flex;
-align-items:center;
+    min-height:780px;
+    padding-top:78px;
+    background:#fff;
+    display:flex;
+    align-items:center;
 }
 .hero-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:75px;
-align-items:center;
-padding:75px 0;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+    gap:70px;
+    padding:80px 0;
 }
 .hero-content{
-max-width:610px;
+    max-width:620px;
 }
 .hero-label{
-display:inline-flex;
-align-items:center;
-gap:8px;
-padding:7px 13px;
-border-radius:50px;
-background:#edf5f7;
-color:var(--navy);
-font-size:10px;
-font-weight:800;
-margin-bottom:22px;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    padding:7px 12px;
+    border-radius:50px;
+    background:#edf5f7;
+    color:var(--navy);
+    font-size:10px;
+    font-weight:700;
+    margin-bottom:22px;
 }
 .hero-label i{
-font-size:7px;
-color:var(--blue);
+    color:#2D7289;
+    font-size:7px;
 }
 .hero h1{
-font-size:clamp(40px,5vw,67px);
-font-weight:900;
-line-height:1.35;
-letter-spacing:-2px;
-color:var(--navy-dark);
-margin-bottom:20px;
+    font-size:clamp(40px,5vw,67px);
+    line-height:1.35;
+    color:var(--navy-dark);
+    font-weight:900;
+    letter-spacing:-1.5px;
+    margin-bottom:20px;
 }
 .hero h1 span{
-color:var(--blue);
+    color:var(--blue);
 }
 .hero-description{
-font-size:13px;
-color:var(--muted);
-line-height:2.4;
-max-width:570px;
+    color:var(--muted);
+    font-size:14px;
+    line-height:2.3;
+    max-width:570px;
 }
 .hero-buttons{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-margin-top:30px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:30px;
 }
 .btn{
-display:inline-flex;
-align-items:center;
-justify-content:center;
-gap:9px;
-min-height:48px;
-padding:0 20px;
-border-radius:10px;
-font-size:10px;
-font-weight:800;
-transition:.3s;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+    min-height:48px;
+    padding:0 20px;
+    border-radius:10px;
+    font-size:11px;
+    font-weight:800;
+    transition:.3s;
 }
 .btn:hover{
-transform:translateY(-3px);
+    transform:translateY(-3px);
 }
 .btn-primary{
-background:var(--navy);
-color:white;
-box-shadow:0 12px 30px rgba(18,59,74,.16);
+    background:var(--navy);
+    color:#fff;
+    box-shadow:0 12px 30px rgba(18,59,74,.18);
 }
 .btn-primary:hover{
-background:var(--navy-dark);
+    background:var(--navy-dark);
 }
 .btn-light{
-background:white;
-color:var(--navy);
-border:1px solid var(--border);
+    background:#fff;
+    color:var(--navy);
+    border:1px solid var(--border);
 }
 .btn-light:hover{
-background:#f7fafb;
-border-color:#bfd0d6;
+    border-color:#b9cbd1;
+    background:#f8fafb;
 }
-/* =========================
-HERO VISUAL
-========================= */
+/* =====================================================
+   HERO IMAGE
+===================================================== */
 .hero-visual{
-height:535px;
-position:relative;
+    position:relative;
+    height:530px;
 }
 .hero-image{
-position:absolute;
-inset:0;
-overflow:hidden;
-border-radius:30px;
-box-shadow:0 35px 90px rgba(18,59,74,.15);
+    position:absolute;
+    inset:0;
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:0 30px 80px rgba(18,59,74,.15);
 }
 .hero-image img{
-width:100%;
-height:100%;
-object-fit:cover;
-transition:1s;
-}
-.hero-image:hover img{
-transform:scale(1.04);
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 .hero-image:after{
-content:"";
-position:absolute;
-inset:0;
-background:
-linear-gradient(
-180deg,
-transparent 45%,
-rgba(7,31,39,.7)
-);
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(
+        180deg,
+        transparent 55%,
+        rgba(7,34,43,.65)
+    );
 }
 .hero-card{
-position:absolute;
-right:25px;
-bottom:25px;
-z-index:2;
-background:rgba(255,255,255,.95);
-border-radius:17px;
-padding:18px 21px;
-box-shadow:0 18px 45px rgba(0,0,0,.13);
-min-width:220px;
+    position:absolute;
+    bottom:25px;
+    right:25px;
+    z-index:2;
+    background:rgba(255,255,255,.95);
+    padding:18px 20px;
+    border-radius:16px;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+    min-width:200px;
 }
 .hero-card strong{
-display:block;
-font-size:20px;
-color:var(--navy);
+    display:block;
+    color:var(--navy);
+    font-size:20px;
 }
 .hero-card span{
-display:block;
-font-size:9px;
-color:var(--muted);
+    color:var(--muted);
+    font-size:9px;
 }
-/* =========================
-TRUST
-========================= */
+/* =====================================================
+   TRUST
+===================================================== */
 .trust{
-background:var(--navy);
-padding:19px 0;
-color:white;
+    background:var(--navy);
+    color:#fff;
+    padding:18px 0;
 }
 .trust-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:15px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
 }
 .trust-item{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:10px;
-font-size:9px;
-border-left:1px solid rgba(255,255,255,.12);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    border-left:1px solid rgba(255,255,255,.12);
+    font-size:10px;
 }
 .trust-item:last-child{
-border-left:0;
+    border-left:0;
 }
 .trust-item i{
-color:#9ecbd6;
-font-size:16px;
+    color:#9fd0dc;
+    font-size:17px;
 }
-/* =========================
-GENERAL SECTIONS
-========================= */
+/* =====================================================
+   SECTIONS
+===================================================== */
 section{
-padding:105px 0;
+    padding:105px 0;
 }
 .section-header{
-max-width:700px;
-margin:0 auto 50px;
-text-align:center;
+    max-width:700px;
+    margin:0 auto 50px;
+    text-align:center;
 }
 .section-label{
-font-size:9px;
-font-weight:900;
-letter-spacing:2px;
-color:var(--blue);
-margin-bottom:8px;
+    color:var(--blue);
+    font-size:9px;
+    font-weight:800;
+    letter-spacing:2px;
+    margin-bottom:8px;
 }
 .section-title{
-font-size:clamp(30px,4vw,44px);
-font-weight:900;
-line-height:1.45;
-color:var(--navy-dark);
+    color:var(--navy-dark);
+    font-size:clamp(29px,4vw,44px);
+    font-weight:900;
+    line-height:1.45;
 }
 .section-title span{
-color:var(--blue);
+    color:var(--blue);
 }
 .section-description{
-font-size:12px;
-color:var(--muted);
-line-height:2.2;
-margin-top:10px;
+    color:var(--muted);
+    font-size:12px;
+    line-height:2.2;
+    margin-top:10px;
 }
-/* =========================
-ABOUT
-========================= */
+/* =====================================================
+   ABOUT
+===================================================== */
 .about{
-background:#fff;
+    background:#fff;
 }
 .about-grid{
-display:grid;
-grid-template-columns:.9fr 1.1fr;
-gap:70px;
-align-items:center;
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    gap:70px;
+    align-items:center;
 }
 .about-image{
-height:500px;
-overflow:hidden;
-border-radius:27px;
+    height:500px;
+    border-radius:25px;
+    overflow:hidden;
 }
 .about-image img{
-width:100%;
-height:100%;
-object-fit:cover;
-transition:.7s;
-}
-.about-image:hover img{
-transform:scale(1.04);
+    width:100%;
+    height:100%;
+    object-fit:cover;
 }
 .about-content h2{
-font-size:36px;
-line-height:1.5;
-color:var(--navy-dark);
-margin-bottom:17px;
+    font-size:35px;
+    color:var(--navy-dark);
+    line-height:1.5;
+    margin-bottom:18px;
 }
 .about-content h2 span{
-color:var(--blue);
+    color:var(--blue);
 }
 .about-content p{
-font-size:13px;
-color:var(--muted);
-line-height:2.4;
+    color:var(--muted);
+    font-size:13px;
+    line-height:2.35;
 }
 .about-points{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:12px;
-margin-top:28px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin-top:27px;
 }
 .point{
-background:#f6f9fa;
-border:1px solid var(--border);
-border-radius:13px;
-padding:15px;
-font-size:10px;
-color:#46575e;
+    padding:15px;
+    background:#f7f9fa;
+    border:1px solid var(--border);
+    border-radius:12px;
+    font-size:10px;
+    color:#43535a;
 }
 .point i{
-color:var(--blue);
-margin-left:6px;
+    color:var(--blue);
+    margin-left:6px;
 }
-/* =========================
-SERVICES
-========================= */
+/* =====================================================
+   SERVICES
+===================================================== */
 .services{
-background:#f4f7f8;
+    background:#f5f7f8;
 }
 .service-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:18px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
 }
 .service{
-background:white;
-border:1px solid var(--border);
-border-radius:21px;
-padding:30px;
-min-height:225px;
-transition:.3s;
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:30px;
+    min-height:230px;
+    transition:.3s;
 }
 .service:hover{
-transform:translateY(-7px);
-box-shadow:var(--shadow);
-border-color:#bfd3d9;
+    transform:translateY(-7px);
+    box-shadow:var(--shadow);
+    border-color:#cbdde2;
 }
 .service-icon{
-width:55px;
-height:55px;
-display:flex;
-align-items:center;
-justify-content:center;
-background:#edf5f7;
-color:var(--navy);
-border-radius:14px;
-font-size:20px;
-margin-bottom:20px;
+    width:54px;
+    height:54px;
+    border-radius:14px;
+    background:#edf5f7;
+    color:var(--navy);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+    margin-bottom:20px;
 }
 .service h3{
-font-size:15px;
-color:var(--navy-dark);
-margin-bottom:8px;
+    font-size:15px;
+    color:var(--navy-dark);
+    margin-bottom:8px;
 }
 .service p{
-font-size:10px;
-color:var(--muted);
-line-height:2.15;
+    font-size:10px;
+    color:var(--muted);
+    line-height:2.1;
 }
-/* =========================
-DOUBLE GLASS
-========================= */
+/* =====================================================
+   DOUBLE GLASS
+===================================================== */
 .double-section{
-background:white;
+    background:#fff;
 }
 .double-box{
-position:relative;
-overflow:hidden;
-background:var(--navy);
-color:white;
-border-radius:29px;
-padding:65px;
-display:grid;
-grid-template-columns:1.15fr .85fr;
-gap:60px;
+    background:var(--navy);
+    border-radius:28px;
+    padding:65px;
+    color:#fff;
+    display:grid;
+    grid-template-columns:1.2fr .8fr;
+    gap:60px;
+    overflow:hidden;
+    position:relative;
 }
 .double-box:before{
-content:"";
-position:absolute;
-width:430px;
-height:430px;
-border-radius:50%;
-background:rgba(255,255,255,.035);
-left:-140px;
-top:-170px;
+    content:"";
+    position:absolute;
+    width:400px;
+    height:400px;
+    border-radius:50%;
+    background:rgba(255,255,255,.04);
+    left:-120px;
+    top:-150px;
 }
 .double-content{
-position:relative;
-z-index:2;
+    position:relative;
+    z-index:1;
 }
 .double-content .section-label{
-color:#a7d5df;
+    color:#a5d5df;
 }
 .double-content h2{
-font-size:40px;
-line-height:1.45;
-margin-bottom:14px;
+    font-size:40px;
+    line-height:1.45;
+    margin-bottom:14px;
 }
 .double-content h2 span{
-color:#a7d5df;
+    color:#a5d5df;
 }
 .double-content p{
-font-size:12px;
-color:#c5d4d8;
-line-height:2.35;
+    color:#c1d0d5;
+    font-size:12px;
+    line-height:2.3;
 }
 .double-button{
-margin-top:25px;
+    margin-top:25px;
 }
 .double-list{
-position:relative;
-z-index:2;
-display:grid;
-gap:12px;
+    position:relative;
+    z-index:1;
+    display:grid;
+    gap:12px;
 }
 .double-item{
-display:flex;
-align-items:center;
-gap:15px;
-padding:18px;
-border-radius:15px;
-background:rgba(255,255,255,.07);
-border:1px solid rgba(255,255,255,.09);
+    display:flex;
+    align-items:center;
+    gap:15px;
+    background:rgba(255,255,255,.07);
+    border:1px solid rgba(255,255,255,.09);
+    border-radius:15px;
+    padding:18px;
 }
 .double-item i{
-width:42px;
-height:42px;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:11px;
-background:rgba(255,255,255,.08);
-color:#a7d5df;
+    width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:11px;
+    background:rgba(255,255,255,.09);
+    color:#a5d5df;
 }
 .double-item strong{
-display:block;
-font-size:11px;
+    display:block;
+    font-size:11px;
 }
 .double-item span{
-display:block;
-font-size:8px;
-color:#aec0c5;
+    display:block;
+    color:#aebfc4;
+    font-size:8px;
 }
-/* ==================================================
-PROJECTS - NEW FOREIGN STYLE
-================================================== */
+/* =====================================================
+   PREMIUM PROJECTS
+===================================================== */
 .projects{
-background:#f4f7f8;
+    background:#f5f7f8;
+    position:relative;
 }
-.projects-header{
-display:flex;
-align-items:flex-end;
-justify-content:space-between;
-gap:30px;
-margin-bottom:45px;
+.projects .section-header{
+    max-width:760px;
 }
-.projects-header .section-header{
-margin:0;
-text-align:right;
-max-width:600px;
+.portfolio-line{
+    width:55px;
+    height:3px;
+    margin:0 auto 18px;
+    border-radius:50px;
+    background:#2D7289;
 }
-.projects-link{
-display:inline-flex;
-align-items:center;
-gap:8px;
-font-size:10px;
-font-weight:800;
-color:var(--navy);
-padding:12px 17px;
-background:white;
-border:1px solid var(--border);
-border-radius:10px;
-white-space:nowrap;
-transition:.3s;
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    gap:20px;
 }
-.projects-link:hover{
-background:var(--navy);
-color:white;
-transform:translateY(-3px);
-}
-/* MAIN PORTFOLIO */
-.portfolio{
-display:grid;
-grid-template-columns:1.35fr .65fr;
-grid-template-rows:270px 270px;
-gap:18px;
-}
-/* PROJECT */
 .project{
-position:relative;
-overflow:hidden;
-border-radius:22px;
-background:#dce5e8;
-cursor:pointer;
-box-shadow:0 10px 35px rgba(18,59,74,.05);
+    position:relative;
+    background:#fff;
+    border:1px solid #e1e8eb;
+    border-radius:22px;
+    overflow:hidden;
+    min-height:420px;
+    box-shadow:0 10px 35px rgba(18,59,74,.05);
+    transition:
+        transform .45s ease,
+        box-shadow .45s ease,
+        border-color .45s ease;
 }
-.project:first-child{
-grid-row:span 2;
+/* نامتقارن */
+.project:nth-child(1){
+    grid-column:span 7;
 }
-.project img{
-width:100%;
-height:100%;
-object-fit:cover;
-transition:.7s;
+.project:nth-child(2){
+    grid-column:span 5;
 }
-.project:hover img{
-transform:scale(1.07);
+.project:nth-child(3){
+    grid-column:span 5;
 }
-/* OVERLAY */
-.project:after{
-content:"";
-position:absolute;
-inset:0;
-background:
-linear-gradient(
-180deg,
-transparent 35%,
-rgba(5,25,32,.82)
-);
-opacity:.85;
-transition:.35s;
+.project:nth-child(4){
+    grid-column:span 7;
 }
-.project:hover:after{
-opacity:1;
+.project:nth-child(5){
+    grid-column:span 4;
 }
-/* PROJECT CONTENT */
-.project-info{
-position:absolute;
-right:24px;
-left:24px;
-bottom:22px;
-z-index:2;
-color:white;
-transform:translateY(8px);
-transition:.35s;
+.project:nth-child(6){
+    grid-column:span 8;
 }
-.project:hover .project-info{
-transform:translateY(0);
+/* عکس */
+.project-image{
+    position:absolute;
+    inset:0;
+    height:100%;
+    overflow:hidden;
+}
+.project-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:
+        transform .8s cubic-bezier(.2,.8,.2,1);
+}
+/* Overlay */
+.project-image:after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(8,32,42,.02) 20%,
+            rgba(8,32,42,.18) 48%,
+            rgba(8,32,42,.88) 100%
+        );
+    transition:.45s ease;
+}
+/* متن */
+.project-content{
+    position:absolute;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index:2;
+    padding:30px;
+    color:#fff;
+    transform:translateY(5px);
+    transition:.45s ease;
 }
 .project-number{
-font-size:9px;
-color:#a9d5df;
-font-weight:800;
-letter-spacing:2px;
-margin-bottom:5px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:34px;
+    height:34px;
+    margin-bottom:13px;
+    border-radius:50%;
+    background:rgba(255,255,255,.16);
+    border:1px solid rgba(255,255,255,.25);
+    backdrop-filter:blur(10px);
+    font-size:10px;
+    font-weight:700;
 }
-.project-info h3{
-font-size:17px;
-font-weight:800;
-margin-bottom:2px;
+.project-content h3{
+    color:#fff;
+    font-size:20px;
+    font-weight:800;
+    margin:0 0 5px;
+    line-height:1.5;
 }
-.project-info p{
-font-size:9px;
-color:#d2dfe2;
+.project-content p{
+    color:rgba(255,255,255,.78);
+    font-size:10px;
+    margin:0;
+    line-height:2;
 }
-.project-arrow{
-position:absolute;
-left:20px;
-bottom:20px;
-z-index:3;
-width:39px;
-height:39px;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:50%;
-background:rgba(255,255,255,.15);
-border:1px solid rgba(255,255,255,.25);
-color:white;
-transition:.3s;
+.project-tag{
+    display:inline-block;
+    margin-top:13px;
+    padding:5px 10px;
+    border-radius:50px;
+    background:rgba(255,255,255,.13);
+    border:1px solid rgba(255,255,255,.18);
+    color:#fff;
+    font-size:8px;
+    backdrop-filter:blur(10px);
 }
-.project:hover .project-arrow{
-background:white;
-color:var(--navy);
-transform:translateX(-4px);
+/* Hover */
+.project:hover{
+    transform:translateY(-8px);
+    border-color:#b9cbd1;
+    box-shadow:
+        0 25px 60px rgba(18,59,74,.16);
 }
-/* =========================
-WHY
-========================= */
+.project:hover .project-image img{
+    transform:scale(1.08);
+}
+.project:hover .project-image:after{
+    background:
+        linear-gradient(
+            180deg,
+            rgba(8,32,42,.03) 10%,
+            rgba(8,32,42,.28) 45%,
+            rgba(8,32,42,.94) 100%
+        );
+}
+.project:hover .project-content{
+    transform:translateY(0);
+}
+/* دکمه پروژه */
+.projects-more{
+    display:flex;
+    justify-content:center;
+    margin-top:38px;
+}
+.projects-more a{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:13px 22px;
+    border-radius:11px;
+    background:#fff;
+    border:1px solid #dfe7ea;
+    color:#123B4A;
+    font-size:10px;
+    font-weight:800;
+    transition:.3s;
+}
+.projects-more a:hover{
+    background:#123B4A;
+    color:#fff;
+    border-color:#123B4A;
+    transform:translateY(-3px);
+}
+/* =====================================================
+   WHY US
+===================================================== */
 .why{
-background:white;
+    background:#fff;
 }
 .why-grid{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:16px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:16px;
 }
 .why-card{
-text-align:center;
-padding:30px 18px;
-border:1px solid var(--border);
-border-radius:18px;
+    text-align:center;
+    padding:30px 18px;
+    border:1px solid var(--border);
+    border-radius:18px;
+    background:#fff;
 }
 .why-card i{
-font-size:25px;
-color:var(--blue);
-margin-bottom:15px;
+    font-size:25px;
+    color:var(--blue);
+    margin-bottom:15px;
 }
 .why-card h3{
-font-size:12px;
-color:var(--navy-dark);
-margin-bottom:5px;
+    font-size:12px;
+    color:var(--navy-dark);
+    margin-bottom:5px;
 }
 .why-card p{
-font-size:9px;
-color:var(--muted);
-line-height:2;
+    font-size:9px;
+    color:var(--muted);
+    line-height:2;
 }
-/* =========================
-STATS
-========================= */
+/* =====================================================
+   STATS
+===================================================== */
 .stats-section{
-background:#f4f7f8;
+    background:#f5f7f8;
 }
 .stats{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:15px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
 }
 .stat{
-text-align:center;
-background:white;
-border:1px solid var(--border);
-border-radius:18px;
-padding:30px 10px;
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:18px;
+    text-align:center;
+    padding:30px 10px;
 }
 .stat strong{
-display:block;
-font-size:30px;
-font-weight:900;
-color:var(--navy);
+    display:block;
+    color:var(--navy);
+    font-size:30px;
+    font-weight:900;
 }
 .stat span{
-font-size:9px;
-color:var(--muted);
+    color:var(--muted);
+    font-size:9px;
 }
-/* =========================
-FAQ
-========================= */
+/* =====================================================
+   FAQ
+===================================================== */
 .faq{
-background:white;
+    background:#fff;
 }
 .faq-list{
-max-width:850px;
-margin:auto;
+    max-width:850px;
+    margin:auto;
 }
 details{
-background:#fafcfc;
-border:1px solid var(--border);
-border-radius:13px;
-margin-bottom:10px;
-overflow:hidden;
+    border:1px solid var(--border);
+    border-radius:13px;
+    margin-bottom:10px;
+    background:#fafcfc;
+    overflow:hidden;
 }
 summary{
-cursor:pointer;
-list-style:none;
-padding:17px 20px;
-font-size:11px;
-font-weight:700;
-color:var(--navy-dark);
+    cursor:pointer;
+    list-style:none;
+    padding:17px 20px;
+    font-size:11px;
+    font-weight:700;
+    color:var(--navy-dark);
 }
 summary::-webkit-details-marker{
-display:none;
+    display:none;
 }
 summary:after{
-content:"+";
-float:left;
-font-size:18px;
-color:var(--blue);
+    content:"+";
+    float:left;
+    color:var(--blue);
+    font-size:18px;
 }
 details[open] summary:after{
-content:"−";
+    content:"−";
 }
 details p{
-padding:0 20px 18px;
-font-size:10px;
-color:var(--muted);
-line-height:2.2;
+    padding:0 20px 18px;
+    color:var(--muted);
+    font-size:10px;
+    line-height:2.2;
 }
-/* =========================
-CONTACT
-========================= */
+/* =====================================================
+   CONTACT
+===================================================== */
 .contact{
-background:#f4f7f8;
+    background:#f5f7f8;
 }
 .contact-grid{
-display:grid;
-grid-template-columns:.85fr 1.15fr;
-gap:20px;
+    display:grid;
+    grid-template-columns:.85fr 1.15fr;
+    gap:20px;
 }
 .contact-card{
-background:white;
-border:1px solid var(--border);
-border-radius:22px;
-padding:35px;
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:22px;
+    padding:35px;
 }
 .contact-card h2{
-font-size:28px;
-color:var(--navy-dark);
-margin-bottom:7px;
+    color:var(--navy-dark);
+    font-size:28px;
+    margin-bottom:7px;
 }
 .contact-card h2 span{
-color:var(--blue);
+    color:var(--blue);
 }
 .contact-card>p{
-font-size:11px;
-color:var(--muted);
-margin-bottom:20px;
+    color:var(--muted);
+    font-size:11px;
+    margin-bottom:20px;
 }
 .contact-item{
-display:flex;
-align-items:center;
-gap:13px;
-padding:14px 0;
-border-bottom:1px solid #edf1f2;
+    display:flex;
+    align-items:center;
+    gap:13px;
+    padding:14px 0;
+    border-bottom:1px solid #edf1f2;
 }
 .contact-icon{
-width:40px;
-height:40px;
-display:flex;
-align-items:center;
-justify-content:center;
-background:#edf5f7;
-color:var(--navy);
-border-radius:11px;
+    width:40px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#edf5f7;
+    color:var(--navy);
+    border-radius:11px;
 }
 .contact-item small{
-display:block;
-font-size:8px;
-color:#91a0a6;
+    display:block;
+    color:#91a0a6;
+    font-size:8px;
 }
 .contact-item strong{
-display:block;
-font-size:11px;
-color:var(--navy-dark);
+    display:block;
+    color:var(--navy-dark);
+    font-size:11px;
 }
 .contact-buttons{
-display:flex;
-gap:8px;
-flex-wrap:wrap;
-margin-top:22px;
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+    margin-top:22px;
 }
 .map{
-overflow:hidden;
-min-height:420px;
-border-radius:22px;
-background:#e9eef0;
+    border-radius:22px;
+    overflow:hidden;
+    min-height:420px;
+    background:#e9eef0;
 }
 .map iframe{
-width:100%;
-height:100%;
-min-height:420px;
-border:0;
+    width:100%;
+    height:100%;
+    min-height:420px;
+    border:0;
 }
-/* =========================
-CTA
-========================= */
+/* =====================================================
+   CTA
+===================================================== */
 .cta-section{
-padding-top:30px;
-padding-bottom:100px;
-background:#f4f7f8;
+    padding-top:30px;
+    padding-bottom:100px;
+    background:#f5f7f8;
 }
 .cta{
-background:var(--navy);
-color:white;
-text-align:center;
-border-radius:26px;
-padding:60px 30px;
+    background:var(--navy);
+    color:#fff;
+    border-radius:25px;
+    padding:60px 30px;
+    text-align:center;
 }
 .cta h2{
-font-size:34px;
-line-height:1.5;
+    font-size:34px;
+    line-height:1.5;
 }
 .cta h2 span{
-color:#a5d5df;
+    color:#a5d5df;
 }
 .cta p{
-font-size:11px;
-color:#c3d0d4;
-margin:8px 0 23px;
+    color:#c3d0d4;
+    font-size:11px;
+    margin:8px 0 23px;
 }
 .cta-buttons{
-display:flex;
-justify-content:center;
-gap:9px;
-flex-wrap:wrap;
+    display:flex;
+    justify-content:center;
+    gap:9px;
+    flex-wrap:wrap;
 }
 .cta .btn-light{
-background:rgba(255,255,255,.08);
-color:white;
-border-color:rgba(255,255,255,.15);
+    background:rgba(255,255,255,.09);
+    color:#fff;
+    border-color:rgba(255,255,255,.15);
 }
-/* =========================
-FOOTER
-========================= */
+/* =====================================================
+   FOOTER
+===================================================== */
 footer{
-background:#0c2b36;
-color:white;
-padding:50px 0 25px;
+    background:#0c2b36;
+    color:#fff;
+    padding:50px 0 25px;
 }
 .footer-grid{
-display:grid;
-grid-template-columns:1.3fr .7fr .7fr;
-gap:50px;
-padding-bottom:35px;
-border-bottom:1px solid rgba(255,255,255,.1);
+    display:grid;
+    grid-template-columns:1.3fr .7fr .7fr;
+    gap:50px;
+    padding-bottom:35px;
+    border-bottom:1px solid rgba(255,255,255,.1);
 }
 .footer-brand h3{
-font-size:18px;
-margin-bottom:8px;
+    font-size:18px;
+    margin-bottom:8px;
 }
 .footer-brand p{
-font-size:9px;
-color:#aebec3;
-line-height:2;
+    color:#aebec3;
+    font-size:9px;
+    line-height:2;
 }
 .footer-column h4{
-font-size:11px;
-margin-bottom:12px;
+    font-size:11px;
+    margin-bottom:12px;
 }
 .footer-column a{
-display:block;
-font-size:9px;
-color:#aebec3;
-margin:6px 0;
-transition:.2s;
+    display:block;
+    color:#aebec3;
+    font-size:9px;
+    margin:6px 0;
+    transition:.2s;
 }
 .footer-column a:hover{
-color:white;
+    color:#fff;
 }
 .footer-bottom{
-text-align:center;
-font-size:8px;
-color:#8da2a8;
-padding-top:22px;
+    text-align:center;
+    color:#8da2a8;
+    font-size:8px;
+    padding-top:22px;
 }
-/* =========================
-FLOAT BUTTONS
-========================= */
+/* =====================================================
+   FLOAT BUTTONS
+===================================================== */
 .float-buttons{
-position:fixed;
-left:18px;
-bottom:18px;
-z-index:900;
-display:flex;
-flex-direction:column;
-gap:9px;
+    position:fixed;
+    left:18px;
+    bottom:18px;
+    z-index:900;
+    display:flex;
+    flex-direction:column;
+    gap:9px;
 }
 .float-btn{
-width:50px;
-height:50px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-font-size:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.15);
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 .float-phone{
-background:var(--navy);
+    background:var(--navy);
 }
 .float-whatsapp{
-background:#20bd67;
+    background:#20bd67;
 }
-/* =========================
-RESPONSIVE
-========================= */
-@media(max-width:950px){
-.nav{
-height:auto;
-min-height:70px;
-padding:10px 0;
-flex-wrap:wrap;
+/* =====================================================
+   TABLET
+===================================================== */
+@media(max-width:900px){
+    .nav{
+        height:auto;
+        min-height:70px;
+        padding:10px 0;
+        flex-wrap:wrap;
+    }
+    .nav-links{
+        order:3;
+        width:100%;
+        justify-content:center;
+        overflow-x:auto;
+    }
+    .nav-links a{
+        font-size:9px;
+        white-space:nowrap;
+        padding:5px 7px;
+    }
+    .nav-call{
+        font-size:9px;
+        padding:9px 12px;
+    }
+    .hero{
+        min-height:auto;
+    }
+    .hero-grid{
+        grid-template-columns:1fr;
+        gap:40px;
+        padding:70px 0;
+    }
+    .hero-content{
+        text-align:center;
+        margin:auto;
+    }
+    .hero-description{
+        margin:auto;
+    }
+    .hero-buttons{
+        justify-content:center;
+    }
+    .hero-visual{
+        height:420px;
+    }
+    .trust-grid{
+        grid-template-columns:1fr 1fr;
+    }
+    .trust-item{
+        border-left:0;
+        padding:8px;
+    }
+    .about-grid{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+    .about-image{
+        height:350px;
+    }
+    .service-grid{
+        grid-template-columns:1fr 1fr;
+    }
+    .double-box{
+        grid-template-columns:1fr;
+        padding:40px 25px;
+        gap:35px;
+    }
+    /* PROJECTS TABLET */
+    .project-grid{
+        grid-template-columns:1fr 1fr;
+    }
+    .project:nth-child(1),
+    .project:nth-child(2),
+    .project:nth-child(3),
+    .project:nth-child(4),
+    .project:nth-child(5),
+    .project:nth-child(6){
+        grid-column:span 1;
+    }
+    .project{
+        min-height:380px;
+    }
+    .why-grid{
+        grid-template-columns:1fr 1fr;
+    }
+    .stats{
+        grid-template-columns:1fr 1fr;
+    }
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
 }
-.nav-links{
-order:3;
-width:100%;
-justify-content:center;
-overflow-x:auto;
+/* =====================================================
+   MOBILE
+===================================================== */
+@media(max-width:550px){
+    .container{
+        width:90%;
+    }
+    section{
+        padding:75px 0;
+    }
+    .logo{
+        font-size:14px;
+    }
+    .logo-mark{
+        width:34px;
+        height:34px;
+    }
+    .nav-call span{
+        display:none;
+    }
+    .hero h1{
+        font-size:35px;
+    }
+    .hero-description{
+        font-size:11px;
+    }
+    .hero-visual{
+        height:330px;
+    }
+    .hero-card{
+        right:15px;
+        bottom:15px;
+        min-width:170px;
+    }
+    .hero-card strong{
+        font-size:17px;
+    }
+    .trust-grid{
+        gap:5px;
+    }
+    .trust-item{
+        font-size:8px;
+    }
+    .about-content h2{
+        font-size:27px;
+    }
+    .about-points{
+        grid-template-columns:1fr;
+    }
+    .service-grid{
+        grid-template-columns:1fr;
+    }
+    .service{
+        min-height:auto;
+    }
+    .double-content h2{
+        font-size:29px;
+    }
+    /* PROJECTS MOBILE */
+    .project-grid{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+    .project{
+        grid-column:span 1 !important;
+        min-height:360px;
+        border-radius:18px;
+    }
+    .project-content{
+        padding:22px;
+    }
+    .project-content h3{
+        font-size:17px;
+    }
+    .project-content p{
+        font-size:9px;
+    }
+    .why-grid{
+        grid-template-columns:1fr 1fr;
+    }
+    .why-card{
+        padding:22px 10px;
+    }
+    .why-card p{
+        font-size:8px;
+    }
+    .stats{
+        grid-template-columns:1fr 1fr;
+    }
+    .contact-card{
+        padding:25px 20px;
+    }
+    .cta{
+        padding:45px 20px;
+    }
+    .cta h2{
+        font-size:27px;
+    }
+    .footer-grid{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
 }
-.nav-links a{
-font-size:9px;
-white-space:nowrap;
-padding:5px 7px;
-}
-.nav-call{
-font-size:9px;
-padding:9px 12px;
-}
-.hero{
-min-height:auto;
-}
-.hero-grid{
-grid-template-columns:1fr;
-gap:40px;
-padding:70px 0;
-}
-.hero-content{
-text-align:center;
-margin:auto;
-}
-.hero-description{
-margin:auto;
-}
-.hero-buttons{
-justify-content:center;
-}
-.hero-visual{
-height:430px;
-}
-.trust-grid{
-grid-template-columns:1fr 1fr;
-}
-.trust-item{
-border-left:0;
-padding:8px;
-}
-.about-grid{
-grid-template-columns:1fr;
-gap:35px;
-}
-.about-image{
-height:370px;
-}
-.service-grid{
-grid-template-columns:1fr 1fr;
-}
-.double-box{
-grid-template-columns:1fr;
-padding:45px 30px;
-gap:35px;
-}
-.portfolio{
-grid-template-columns:1fr 1fr;
-grid-template-rows:270px 270px 270px;
-}
-.project:first-child{
-grid-column:span 2;
-grid-row:span 1;
-}
-.why-grid{
-grid-template-columns:1fr 1fr;
-}
-.stats{
-grid-template-columns:1fr 1fr;
-}
-.contact-grid{
-grid-template-columns:1fr;
-}
-.footer-grid{
-grid-template-columns:1fr 1fr;
-}
-}
-/* =========================
-MOBILE
-========================= */
-@media(max-width:600px){
-.container{
-width:90%;
-}
-section{
-padding:75px 0;
-}
-.logo{
-font-size:14px;
-}
-.logo-mark{
-width:34px;
-height:34px;
-}
-.nav-call span{
-display:none;
-}
-.hero h1{
-font-size:35px;
-}
-.hero-description{
-font-size:11px;
-}
-.hero-visual{
-height:330px;
-}
-.hero-card{
-right:15px;
-bottom:15px;
-min-width:170px;
-}
-.hero-card strong{
-font-size:17px;
-}
-.trust-grid{
-gap:5px;
-}
-.trust-item{
-font-size:8px;
-}
-.about-content h2{
-font-size:27px;
-}
-.about-points{
-grid-template-columns:1fr;
-}
-.service-grid{
-grid-template-columns:1fr;
-}
-.service{
-min-height:auto;
-}
-.double-content h2{
-font-size:29px;
-}
-/* MOBILE PORTFOLIO */
-.projects-header{
-display:block;
-}
-.projects-header .section-header{
-text-align:center;
-margin-bottom:20px;
-}
-.projects-link{
-display:flex;
-width:max-content;
-margin:0 auto;
-}
-.portfolio{
-display:grid;
-grid-template-columns:1fr;
-grid-template-rows:300px 250px 250px 250px 250px 250px;
-gap:13px;
-}
-.project:first-child{
-grid-column:auto;
-grid-row:auto;
-}
-.project-info{
-right:18px;
-left:18px;
-bottom:17px;
-}
-.project-info h3{
-font-size:14px;
-}
-.project-info p{
-font-size:8px;
-}
-.project-arrow{
-left:16px;
-bottom:16px;
-width:35px;
-height:35px;
-}
-.why-grid{
-grid-template-columns:1fr 1fr;
-}
-.why-card{
-padding:22px 10px;
-}
-.why-card p{
-font-size:8px;
-}
-.stats{
-grid-template-columns:1fr 1fr;
-}
-.contact-card{
-padding:25px 20px;
-}
-.cta{
-padding:45px 20px;
-}
-.cta h2{
-font-size:27px;
-}
-.footer-grid{
-grid-template-columns:1fr;
-gap:25px;
-}
-}
-/* =========================
-SELECTION
-========================= */
+/* =====================================================
+   SELECTION
+===================================================== */
 ::selection{
-background:var(--navy);
-color:white;
+    background:var(--navy);
+    color:#fff;
 }
 </style>
 </head>
 <body>
-<!-- =========================
-HEADER
-========================= -->
+<!-- =====================================================
+     HEADER
+===================================================== -->
 <header class="header">
 <div class="container nav">
 <a href="#" class="logo">
@@ -1250,9 +1277,9 @@ AGHAEI <span>GLASS</span>
 </a>
 </div>
 </header>
-<!-- =========================
-HERO
-========================= -->
+<!-- =====================================================
+     HERO
+===================================================== -->
 <header class="hero">
 <div class="container hero-grid">
 <div class="hero-content">
@@ -1288,7 +1315,7 @@ HERO
 
 </a>
 
-نمونه‌کارها
+مشاهده نمونه‌کارها
 
 </a>
 </div>
@@ -1297,8 +1324,8 @@ HERO
 <div class="hero-image">
 
 <img
-src=“https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=90”
-alt=“شیشه ساختمان مدرن”
+src=“https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85”
+alt=“شیشه ساختمان مدرن در ارومیه”
 
 </div>
 <div class="hero-card">
@@ -1312,9 +1339,9 @@ AGHAEI GLASS
 </div>
 </div>
 </header>
-<!-- =========================
-TRUST
-========================= -->
+<!-- =====================================================
+     TRUST
+===================================================== -->
 <div class="trust">
 <div class="container trust-grid">
 <div class="trust-item">
@@ -1339,9 +1366,9 @@ TRUST
 </div>
 </div>
 </div>
-<!-- =========================
-ABOUT
-========================= -->
+<!-- =====================================================
+     ABOUT
+===================================================== -->
 <section id="about" class="about">
 <div class="container">
 <div class="section-header">
@@ -1365,7 +1392,7 @@ ABOUT AGHAEI GLASS
 <div class="about-image">
 
 <img
-src=“https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=90”
+src=“https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=85”
 alt=“شیشه ساختمانی و دکوراسیون مدرن”
 loading=“lazy”
 
@@ -1392,29 +1419,33 @@ loading=“lazy”
 </p>
 <div class="about-points">
 <div class="point">
-<i class="fa-solid fa-check"></i>
+
 شیشه دوجداره
+
 </div>
 <div class="point">
-<i class="fa-solid fa-check"></i>
+
 شیشه‌بری سفارشی
+
 </div>
 <div class="point">
-<i class="fa-solid fa-check"></i>
+
 شیشه ساختمانی
+
 </div>
 <div class="point">
-<i class="fa-solid fa-check"></i>
+
 شیشه دکوراتیو
+
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- =========================
-SERVICES
-========================= -->
+<!-- =====================================================
+     SERVICES
+===================================================== -->
 <section id="services" class="services">
 <div class="container">
 <div class="section-header">
@@ -1438,7 +1469,9 @@ OUR SERVICES
 <div class="service-icon">
 <i class="fa-solid fa-window-maximize"></i>
 </div>
-<h3>شیشه دوجداره ارومیه</h3>
+<h3>
+شیشه دوجداره ارومیه
+</h3>
 <p>
 تولید و آماده‌سازی شیشه دوجداره
 برای پنجره‌ها و پروژه‌های ساختمانی.
@@ -1448,7 +1481,9 @@ OUR SERVICES
 <div class="service-icon">
 <i class="fa-solid fa-ruler-combined"></i>
 </div>
-<h3>شیشه‌بری در ارومیه</h3>
+<h3>
+شیشه‌بری در ارومیه
+</h3>
 <p>
 برش شیشه در ابعاد سفارشی
 متناسب با نیاز پروژه و مشتری.
@@ -1458,7 +1493,9 @@ OUR SERVICES
 <div class="service-icon">
 <i class="fa-solid fa-building"></i>
 </div>
-<h3>شیشه ساختمانی</h3>
+<h3>
+شیشه ساختمانی
+</h3>
 <p>
 ارائه انواع شیشه مناسب
 برای ساختمان‌ها و پروژه‌های مدرن.
@@ -1468,7 +1505,9 @@ OUR SERVICES
 <div class="service-icon">
 <i class="fa-solid fa-gem"></i>
 </div>
-<h3>شیشه دکوراتیو</h3>
+<h3>
+شیشه دکوراتیو
+</h3>
 <p>
 راهکارهای شیشه‌ای برای
 دکوراسیون داخلی و طراحی فضا.
@@ -1478,7 +1517,9 @@ OUR SERVICES
 <div class="service-icon">
 <i class="fa-solid fa-table"></i>
 </div>
-<h3>شیشه رومیزی</h3>
+<h3>
+شیشه رومیزی
+</h3>
 <p>
 برش شیشه رومیزی در ابعاد
 و اندازه‌های مورد نیاز مشتری.
@@ -1488,7 +1529,9 @@ OUR SERVICES
 <div class="service-icon">
 <i class="fa-solid fa-comments"></i>
 </div>
-<h3>مشاوره انتخاب شیشه</h3>
+<h3>
+مشاوره انتخاب شیشه
+</h3>
 <p>
 راهنمایی برای انتخاب نوع،
 ضخامت و ابعاد مناسب شیشه.
@@ -1497,9 +1540,9 @@ OUR SERVICES
 </div>
 </div>
 </section>
-<!-- =========================
-DOUBLE GLASS
-========================= -->
+<!-- =====================================================
+     DOUBLE GLASS
+===================================================== -->
 <section class="double-section">
 <div class="container">
 <div class="double-box">
@@ -1536,55 +1579,58 @@ DOUBLE GLASS URMIA
 <div class="double-list">
 <div class="double-item">
 <div>
-
+<strong>
 ابعاد سفارشی
-
+</strong>
+<span>
 متناسب با اندازه پروژه
-
+</span>
 </div>
 </div>
 <div class="double-item">
 <div>
-
+<strong>
 عایق حرارتی
-
+</strong>
+<span>
 کمک به کاهش تبادل حرارت
-
+</span>
 </div>
 </div>
 <div class="double-item">
 <div>
-
+<strong>
 عایق صوتی
-
+</strong>
+<span>
 کمک به کاهش انتقال صدا
-
+</span>
 </div>
 </div>
 <div class="double-item">
 <div>
-
+<strong>
 مشاوره تخصصی
-
+</strong>
+<span>
 انتخاب مناسب برای پروژه
-
+</span>
 </div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- ==================================================
-PROJECTS
-6 PROFESSIONAL PORTFOLIO IMAGES
-================================================== -->
+<!-- =====================================================
+     PROJECTS — 6 PREMIUM PROJECTS
+===================================================== -->
 <section id="projects" class="projects">
 <div class="container">
-<div class="projects-header">
 <div class="section-header">
 <div class="section-label">
-SELECTED PROJECTS
+OUR PROJECTS
 </div>
+<div class="portfolio-line"></div>
 <h2 class="section-title">
 
 نمونه‌کارهای
@@ -1593,162 +1639,175 @@ SELECTED PROJECTS
 </h2>
 <p class="section-description">
 
-نگاهی به نمونه‌های منتخب استفاده از شیشه
-در معماری مدرن، ساختمان و طراحی داخلی.
+نمونه‌هایی از کاربرد شیشه در ساختمان،
+معماری مدرن و طراحی داخلی.
 
 </p>
 </div>
-<a href="tel:09144406478" class="projects-link">
-
-مشاوره برای پروژه شما
-
-</a>
-</div>
-<div class="portfolio">
+<div class="project-grid">
 <!-- PROJECT 01 -->
 <div class="project">
+<div class="project-image">
 
 <img
-src=“https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1400&q=90”
+src=“https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=90”
 alt=“شیشه دوجداره ساختمان مدرن”
 loading=“lazy”
 
-<div class="project-info">
+</div>
+<div class="project-content">
 <div class="project-number">
-01 / RESIDENTIAL
+01
 </div>
 <h3>
 شیشه دوجداره ساختمانی
 </h3>
 <p>
-ترکیب شیشه و معماری مدرن
+اجرای شیشه برای پنجره و ساختمان‌های مدرن
 </p>
-</div>
-<div class="project-arrow">
-<i class="fa-solid fa-arrow-left"></i>
+<span class="project-tag">
+شیشه دوجداره
+</span>
 </div>
 </div>
 <!-- PROJECT 02 -->
 <div class="project">
+<div class="project-image">
 
 <img
-src=“https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1200&q=90”
-alt=“نمای شیشه‌ای ساختمان”
+src=“https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1600&q=90”
+alt=“شیشه نمای ساختمان مدرن”
 loading=“lazy”
 
-<div class="project-info">
+</div>
+<div class="project-content">
 <div class="project-number">
-02 / ARCHITECTURE
+02
 </div>
 <h3>
 نمای شیشه‌ای مدرن
 </h3>
 <p>
-طراحی مینیمال و شفاف
+ترکیب شیشه و معماری برای ایجاد نمای مدرن
 </p>
-</div>
-<div class="project-arrow">
-<i class="fa-solid fa-arrow-left"></i>
+<span class="project-tag">
+شیشه ساختمانی
+</span>
 </div>
 </div>
 <!-- PROJECT 03 -->
 <div class="project">
+<div class="project-image">
 
 <img
-src=“https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=90”
-alt=“شیشه دکوراتیو داخلی”
+src=“https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1600&q=90”
+alt=“شیشه دکوراتیو طراحی داخلی”
 loading=“lazy”
 
-<div class="project-info">
+</div>
+<div class="project-content">
 <div class="project-number">
-03 / INTERIOR
+03
 </div>
 <h3>
 شیشه دکوراتیو داخلی
 </h3>
 <p>
-ظرافت در طراحی داخلی
+استفاده از شیشه برای طراحی مدرن فضاهای داخلی
 </p>
-</div>
-<div class="project-arrow">
-<i class="fa-solid fa-arrow-left"></i>
+<span class="project-tag">
+دکوراتیو
+</span>
 </div>
 </div>
 <!-- PROJECT 04 -->
 <div class="project">
+<div class="project-image">
 
 <img
-src=“https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=90”
-alt=“پارتیشن شیشه‌ای مدرن”
+src=“https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=90”
+alt=“شیشه پنجره ساختمان لوکس”
 loading=“lazy”
 
-<div class="project-info">
+</div>
+<div class="project-content">
 <div class="project-number">
-04 / INTERIOR
+04
 </div>
 <h3>
-پارتیشن شیشه‌ای
+شیشه پنجره ساختمان
 </h3>
 <p>
-فضای مدرن با شفافیت بیشتر
+استفاده از شیشه در ساختمان‌های مسکونی مدرن
 </p>
-</div>
-<div class="project-arrow">
-<i class="fa-solid fa-arrow-left"></i>
+<span class="project-tag">
+ساختمانی
+</span>
 </div>
 </div>
 <!-- PROJECT 05 -->
 <div class="project">
+<div class="project-image">
 
 <img
-src=“https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=90”
-alt=“پنجره شیشه‌ای ساختمان مدرن”
+src=“https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1600&q=90”
+alt=“شیشه در دکوراسیون داخلی”
 loading=“lazy”
 
-<div class="project-info">
+</div>
+<div class="project-content">
 <div class="project-number">
-05 / RESIDENTIAL
+05
 </div>
 <h3>
-پنجره‌های شیشه‌ای
+شیشه در دکوراسیون
 </h3>
 <p>
-نور بیشتر، طراحی تمیزتر
+اجرای شیشه برای فضاهای داخلی و دکوراسیون
 </p>
-</div>
-<div class="project-arrow">
-<i class="fa-solid fa-arrow-left"></i>
+<span class="project-tag">
+دکوراسیون
+</span>
 </div>
 </div>
 <!-- PROJECT 06 -->
 <div class="project">
+<div class="project-image">
 
 <img
-src=“https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=90”
-alt=“طراحی شیشه ساختمان لوکس”
+src=“https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=90”
+alt=“پروژه شیشه ساختمان مدرن”
 loading=“lazy”
 
-<div class="project-info">
+</div>
+<div class="project-content">
 <div class="project-number">
-06 / PREMIUM
+06
 </div>
 <h3>
-پروژه شیشه لوکس
+پروژه شیشه مدرن
 </h3>
 <p>
-جزئیات شیشه‌ای برای معماری خاص
+ترکیب شیشه، نور و معماری در یک پروژه مدرن
 </p>
+<span class="project-tag">
+پروژه ویژه
+</span>
 </div>
-<div class="project-arrow">
-<i class="fa-solid fa-arrow-left"></i>
 </div>
 </div>
+<div class="projects-more">
+<a href="tel:09144406478">
+
+مشاهده و سفارش پروژه
+
+</a>
 </div>
 </div>
 </section>
-<!-- =========================
-WHY US
-========================= -->
+<!-- =====================================================
+     WHY US
+===================================================== -->
 <section class="why">
 <div class="container">
 <div class="section-header">
@@ -1798,9 +1857,9 @@ WHY AGHAEI GLASS
 </div>
 </div>
 </section>
-<!-- =========================
-STATS
-========================= -->
+<!-- =====================================================
+     STATS
+===================================================== -->
 <section class="stats-section">
 <div class="container">
 <div class="stats">
@@ -1839,9 +1898,9 @@ STATS
 </div>
 </div>
 </section>
-<!-- =========================
-FAQ
-========================= -->
+<!-- =====================================================
+     FAQ
+===================================================== -->
 <section id="faq" class="faq">
 <div class="container">
 <div class="section-header">
@@ -1861,9 +1920,11 @@ FAQ
 شیشه در ارومیه چه خدماتی ارائه می‌دهد؟
 </summary>
 <p>
+
 خدمات شامل شیشه دوجداره،
 شیشه‌بری سفارشی، شیشه ساختمانی،
 شیشه دکوراتیو و شیشه رومیزی است.
+
 </p>
 </details>
 <details>
@@ -1871,8 +1932,10 @@ FAQ
 آیا شیشه در ابعاد سفارشی برش می‌خورد؟
 </summary>
 <p>
+
 بله. ابعاد مورد نیاز بررسی شده
 و شیشه متناسب با اندازه پروژه آماده می‌شود.
+
 </p>
 </details>
 <details>
@@ -1880,9 +1943,11 @@ FAQ
 آیا شیشه دوجداره در ارومیه تولید می‌کنید؟
 </summary>
 <p>
+
 بله. صنایع شیشه دوجداره آقایی
 در زمینه تولید و آماده‌سازی شیشه دوجداره
 در ارومیه فعالیت می‌کند.
+
 </p>
 </details>
 <details>
@@ -1890,17 +1955,19 @@ FAQ
 قیمت شیشه دوجداره چگونه محاسبه می‌شود؟
 </summary>
 <p>
+
 قیمت به نوع شیشه، ضخامت،
 ابعاد و تعداد سفارش بستگی دارد.
 برای دریافت قیمت دقیق تماس بگیرید.
+
 </p>
 </details>
 </div>
 </div>
 </section>
-<!-- =========================
-CONTACT
-========================= -->
+<!-- =====================================================
+     CONTACT
+===================================================== -->
 <section id="contact" class="contact">
 <div class="container">
 <div class="section-header">
@@ -1924,12 +1991,13 @@ CONTACT
 
 </h2>
 <p>
+
 برای سفارش شیشه، استعلام قیمت
 و مشاوره با ما تماس بگیرید.
+
 </p>
 <div class="contact-item">
 <div class="contact-icon">
-<i class="fa-solid fa-phone"></i>
 </div>
 <div>
 <small>
@@ -1942,7 +2010,6 @@ CONTACT
 </div>
 <div class="contact-item">
 <div class="contact-icon">
-<i class="fa-solid fa-location-dot"></i>
 </div>
 <div>
 <small>
@@ -1955,7 +2022,6 @@ CONTACT
 </div>
 <div class="contact-item">
 <div class="contact-icon">
-<i class="fa-brands fa-instagram"></i>
 </div>
 <div>
 <small>
@@ -1988,9 +2054,9 @@ title="موقعیت صنایع شیشه دوجداره آقایی در اروم�
 </div>
 </div>
 </section>
-<!-- =========================
-CTA
-========================= -->
+<!-- =====================================================
+     CTA
+===================================================== -->
 <section class="cta-section">
 <div class="container">
 <div class="cta">
@@ -2003,8 +2069,10 @@ CTA
 </span>
 </h2>
 <p>
+
 برای مشاوره و استعلام قیمت
 با صنایع شیشه آقایی تماس بگیر.
+
 </p>
 <div class="cta-buttons">
 
@@ -2019,9 +2087,9 @@ CTA
 </div>
 </div>
 </section>
-<!-- =========================
-FOOTER
-========================= -->
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 <footer>
 <div class="container">
 <div class="footer-grid">
@@ -2032,6 +2100,9 @@ AGHAEI GLASS
 <p>
 
 صنایع شیشه دوجداره آقایی
+
+<br>
+
 تولید و ارائه شیشه در ارومیه،
 شیشه دوجداره، شیشه ساختمانی
 و شیشه دکوراتیو.
@@ -2084,9 +2155,9 @@ AGHAEI GLASS
 </div>
 </div>
 </footer>
-<!-- =========================
-FLOAT BUTTONS
-========================= -->
+<!-- =====================================================
+     FLOAT BUTTONS
+===================================================== -->
 <div class="float-buttons">
 </a>
 </a>
